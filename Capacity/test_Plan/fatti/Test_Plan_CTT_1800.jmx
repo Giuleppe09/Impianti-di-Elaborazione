@@ -168,7 +168,7 @@
         </elementProp>
       </ThreadGroup>
       <hashTree>
-        <RandomController guiclass="RandomControlGui" testclass="RandomController" testname="Random Controller" enabled="true">
+        <RandomController guiclass="RandomControlGui" testclass="RandomController" testname="Random Controller">
           <intProp name="InterleaveControl.style">1</intProp>
         </RandomController>
         <hashTree>
