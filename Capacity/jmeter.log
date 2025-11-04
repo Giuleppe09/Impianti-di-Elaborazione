@@ -1,0 +1,175 @@
+2025-11-03 23:25:11,294 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-11-03 23:25:11,339 INFO o.a.j.JMeter: Loading user properties from: C:\Users\giuse\Desktop\Impianti\apache-jmeter-5.6.3\bin\user.properties
+2025-11-03 23:25:11,341 INFO o.a.j.JMeter: Loading system properties from: C:\Users\giuse\Desktop\Impianti\apache-jmeter-5.6.3\bin\system.properties
+2025-11-03 23:25:11,362 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-11-03 23:25:11,363 INFO o.a.j.JMeter: Version 5.6.3
+2025-11-03 23:25:11,363 INFO o.a.j.JMeter: java.version=1.8.0_461
+2025-11-03 23:25:11,363 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-11-03 23:25:11,363 INFO o.a.j.JMeter: os.name=Windows 10
+2025-11-03 23:25:11,364 INFO o.a.j.JMeter: os.arch=amd64
+2025-11-03 23:25:11,364 INFO o.a.j.JMeter: os.version=10.0
+2025-11-03 23:25:11,364 INFO o.a.j.JMeter: file.encoding=Cp1252
+2025-11-03 23:25:11,364 INFO o.a.j.JMeter: java.awt.headless=true
+2025-11-03 23:25:11,364 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-11-03 23:25:11,365 INFO o.a.j.JMeter: Available Processors =8
+2025-11-03 23:25:11,379 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-11-03 23:25:11,380 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-11-03 23:25:11,380 INFO o.a.j.JMeter: JMeterHome=C:\Users\giuse\Desktop\Impianti\apache-jmeter-5.6.3
+2025-11-03 23:25:11,381 INFO o.a.j.JMeter: user.dir  =C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\Capacity
+2025-11-03 23:25:11,382 INFO o.a.j.JMeter: PWD       =C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\Capacity
+2025-11-03 23:25:11,405 INFO o.a.j.JMeter: IP: 192.168.56.1 Name: LAPTOP-ACD2EDOE FullName: LAPTOP-ACD2EDOE
+2025-11-03 23:25:11,475 INFO o.a.j.s.FileServer: Default base='C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\Capacity'
+2025-11-03 23:25:11,482 INFO o.a.j.s.FileServer: Set new base='C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\Capacity\test_Plan'
+2025-11-03 23:25:11,933 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-11-03 23:25:12,043 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-11-03 23:25:12,061 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-11-03 23:25:12,086 INFO o.a.j.s.SaveService: Loading file: C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\Capacity\test_Plan\Fairness_test_unfair_UtentiVariabili.jmx
+2025-11-03 23:25:12,332 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-03 23:25:12,333 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-03 23:25:12,333 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-03 23:25:12,333 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-03 23:25:12,334 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-11-03 23:25:12,334 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-11-03 23:25:13,297 INFO o.a.j.JMeter: Creating summariser <summary>
+2025-11-03 23:25:13,383 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-03 23:25:13,385 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-03 23:25:13,385 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-03 23:25:13,406 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-11-03 23:25:13,407 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-11-03 23:25:14,540 INFO o.a.j.JMeter: Running test (1762208714540)
+2025-11-03 23:25:14,678 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : TG1 (LOW)
+2025-11-03 23:25:14,678 INFO o.a.j.e.StandardJMeterEngine: Starting 5 threads for group TG1 (LOW).
+2025-11-03 23:25:14,679 INFO o.a.j.e.StandardJMeterEngine: Test will stop on error
+2025-11-03 23:25:14,680 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=5 ramp-up=30 delayedStart=false
+2025-11-03 23:25:14,718 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-03 23:25:14,719 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : TG2 (MID)
+2025-11-03 23:25:14,719 INFO o.a.j.e.StandardJMeterEngine: Starting 10 threads for group TG2 (MID).
+2025-11-03 23:25:14,720 INFO o.a.j.e.StandardJMeterEngine: Test will stop on error
+2025-11-03 23:25:14,720 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=10 ramp-up=30 delayedStart=false
+2025-11-03 23:25:14,720 INFO o.a.j.t.JMeterThread: Thread started: TG1 (LOW) 1-1
+2025-11-03 23:25:14,723 INFO o.a.j.t.JMeterThread: Thread started: TG2 (MID) 2-1
+2025-11-03 23:25:14,748 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2025-11-03 23:25:14,748 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : TG3 (HIGH)
+2025-11-03 23:25:14,748 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group TG3 (HIGH).
+2025-11-03 23:25:14,749 INFO o.a.j.e.StandardJMeterEngine: Test will stop on error
+2025-11-03 23:25:14,749 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=15 ramp-up=30 delayedStart=false
+2025-11-03 23:25:14,753 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-1
+2025-11-03 23:25:14,783 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2025-11-03 23:25:14,783 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-03 23:25:14,920 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = LAPTOP-ACD2EDOE
+2025-11-03 23:25:14,944 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-11-03 23:25:14,950 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-11-03 23:25:14,950 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-11-03 23:25:14,951 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-11-03 23:25:14,951 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-11-03 23:25:15,588 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2025-11-03 23:25:15,588 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2025-11-03 23:25:16,756 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-2
+2025-11-03 23:25:17,724 INFO o.a.j.t.JMeterThread: Thread started: TG2 (MID) 2-2
+2025-11-03 23:25:18,756 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-3
+2025-11-03 23:25:20,700 INFO o.a.j.t.JMeterThread: Thread started: TG1 (LOW) 1-2
+2025-11-03 23:25:20,724 INFO o.a.j.t.JMeterThread: Thread started: TG2 (MID) 2-3
+2025-11-03 23:25:20,755 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-4
+2025-11-03 23:25:22,754 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-5
+2025-11-03 23:25:23,724 INFO o.a.j.t.JMeterThread: Thread started: TG2 (MID) 2-4
+2025-11-03 23:25:24,755 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-6
+2025-11-03 23:25:26,695 INFO o.a.j.t.JMeterThread: Thread started: TG1 (LOW) 1-3
+2025-11-03 23:25:26,727 INFO o.a.j.t.JMeterThread: Thread started: TG2 (MID) 2-5
+2025-11-03 23:25:26,754 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-7
+2025-11-03 23:25:28,753 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-8
+2025-11-03 23:25:29,724 INFO o.a.j.t.JMeterThread: Thread started: TG2 (MID) 2-6
+2025-11-03 23:25:30,015 INFO o.a.j.r.Summariser: summary +    186 in 00:00:15 =   12.0/s Avg:   641 Min:    48 Max:  3293 Err:     0 (0.00%) Active: 17 Started: 17 Finished: 0
+2025-11-03 23:25:30,754 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-9
+2025-11-03 23:25:32,694 INFO o.a.j.t.JMeterThread: Thread started: TG1 (LOW) 1-4
+2025-11-03 23:25:32,725 INFO o.a.j.t.JMeterThread: Thread started: TG2 (MID) 2-7
+2025-11-03 23:25:32,753 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-10
+2025-11-03 23:25:34,757 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-11
+2025-11-03 23:25:35,723 INFO o.a.j.t.JMeterThread: Thread started: TG2 (MID) 2-8
+2025-11-03 23:25:36,754 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-12
+2025-11-03 23:25:38,691 INFO o.a.j.t.JMeterThread: Thread started: TG1 (LOW) 1-5
+2025-11-03 23:25:38,726 INFO o.a.j.t.JMeterThread: Thread started: TG2 (MID) 2-9
+2025-11-03 23:25:38,752 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-13
+2025-11-03 23:25:40,752 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-14
+2025-11-03 23:25:41,724 INFO o.a.j.t.JMeterThread: Thread started: TG2 (MID) 2-10
+2025-11-03 23:25:42,766 INFO o.a.j.t.JMeterThread: Thread started: TG3 (HIGH) 3-15
+2025-11-03 23:26:00,066 INFO o.a.j.r.Summariser: summary +    354 in 00:00:30 =   11.8/s Avg:  2200 Min:   298 Max:  9059 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2025-11-03 23:26:00,077 INFO o.a.j.r.Summariser: summary =    540 in 00:00:46 =   11.9/s Avg:  1663 Min:    48 Max:  9059 Err:     0 (0.00%)
+2025-11-03 23:26:30,200 INFO o.a.j.r.Summariser: summary +    351 in 00:00:30 =   11.6/s Avg:  2518 Min:   380 Max: 13203 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2025-11-03 23:26:30,208 INFO o.a.j.r.Summariser: summary =    891 in 00:01:16 =   11.8/s Avg:  1999 Min:    48 Max: 13203 Err:     0 (0.00%)
+2025-11-03 23:27:00,394 INFO o.a.j.r.Summariser: summary +    362 in 00:00:30 =   12.0/s Avg:  2472 Min:   334 Max:  7938 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2025-11-03 23:27:00,400 INFO o.a.j.r.Summariser: summary =   1253 in 00:01:46 =   11.8/s Avg:  2136 Min:    48 Max: 13203 Err:     0 (0.00%)
+2025-11-03 23:27:30,037 INFO o.a.j.r.Summariser: summary +    357 in 00:00:30 =   12.0/s Avg:  2489 Min:   274 Max:  8849 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2025-11-03 23:27:30,041 INFO o.a.j.r.Summariser: summary =   1610 in 00:02:15 =   11.9/s Avg:  2214 Min:    48 Max: 13203 Err:     0 (0.00%)
+2025-11-03 23:28:00,053 INFO o.a.j.r.Summariser: summary +    308 in 00:00:30 =   10.3/s Avg:  2968 Min:   458 Max: 13026 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2025-11-03 23:28:00,055 INFO o.a.j.r.Summariser: summary =   1918 in 00:02:46 =   11.6/s Avg:  2335 Min:    48 Max: 13203 Err:     0 (0.00%)
+2025-11-03 23:28:30,006 INFO o.a.j.r.Summariser: summary +    371 in 00:00:30 =   12.4/s Avg:  2421 Min:   394 Max:  8453 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2025-11-03 23:28:30,009 INFO o.a.j.r.Summariser: summary =   2289 in 00:03:15 =   11.7/s Avg:  2349 Min:    48 Max: 13203 Err:     0 (0.00%)
+2025-11-03 23:29:00,193 INFO o.a.j.r.Summariser: summary +    374 in 00:00:30 =   12.4/s Avg:  2465 Min:   353 Max:  8801 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2025-11-03 23:29:00,195 INFO o.a.j.r.Summariser: summary =   2663 in 00:03:46 =   11.8/s Avg:  2365 Min:    48 Max: 13203 Err:     0 (0.00%)
+2025-11-03 23:29:30,003 INFO o.a.j.r.Summariser: summary +    366 in 00:00:30 =   12.3/s Avg:  2384 Min:   248 Max:  8393 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2025-11-03 23:29:30,006 INFO o.a.j.r.Summariser: summary =   3029 in 00:04:15 =   11.9/s Avg:  2368 Min:    48 Max: 13203 Err:     0 (0.00%)
+2025-11-03 23:30:00,085 INFO o.a.j.r.Summariser: summary +    370 in 00:00:30 =   12.3/s Avg:  2450 Min:   432 Max:  7581 Err:     0 (0.00%) Active: 30 Started: 30 Finished: 0
+2025-11-03 23:30:00,088 INFO o.a.j.r.Summariser: summary =   3399 in 00:04:46 =   11.9/s Avg:  2377 Min:    48 Max: 13203 Err:     0 (0.00%)
+2025-11-03 23:30:14,831 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG1 (LOW) 1-4
+2025-11-03 23:30:14,832 INFO o.a.j.t.JMeterThread: Thread finished: TG1 (LOW) 1-4
+2025-11-03 23:30:14,957 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-13
+2025-11-03 23:30:14,957 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-13
+2025-11-03 23:30:15,227 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG1 (LOW) 1-5
+2025-11-03 23:30:15,228 INFO o.a.j.t.JMeterThread: Thread finished: TG1 (LOW) 1-5
+2025-11-03 23:30:15,250 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG1 (LOW) 1-3
+2025-11-03 23:30:15,250 INFO o.a.j.t.JMeterThread: Thread finished: TG1 (LOW) 1-3
+2025-11-03 23:30:15,280 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG1 (LOW) 1-2
+2025-11-03 23:30:15,280 INFO o.a.j.t.JMeterThread: Thread finished: TG1 (LOW) 1-2
+2025-11-03 23:30:15,311 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-12
+2025-11-03 23:30:15,312 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-12
+2025-11-03 23:30:15,318 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG2 (MID) 2-10
+2025-11-03 23:30:15,319 INFO o.a.j.t.JMeterThread: Thread finished: TG2 (MID) 2-10
+2025-11-03 23:30:15,592 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-7
+2025-11-03 23:30:15,593 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-7
+2025-11-03 23:30:15,602 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG1 (LOW) 1-1
+2025-11-03 23:30:15,603 INFO o.a.j.t.JMeterThread: Thread finished: TG1 (LOW) 1-1
+2025-11-03 23:30:15,630 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-9
+2025-11-03 23:30:15,630 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-9
+2025-11-03 23:30:15,638 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-5
+2025-11-03 23:30:15,638 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-5
+2025-11-03 23:30:15,670 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG2 (MID) 2-6
+2025-11-03 23:30:15,671 INFO o.a.j.t.JMeterThread: Thread finished: TG2 (MID) 2-6
+2025-11-03 23:30:15,722 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-11
+2025-11-03 23:30:15,722 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-11
+2025-11-03 23:30:15,724 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG2 (MID) 2-5
+2025-11-03 23:30:15,724 INFO o.a.j.t.JMeterThread: Thread finished: TG2 (MID) 2-5
+2025-11-03 23:30:15,738 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG2 (MID) 2-2
+2025-11-03 23:30:15,738 INFO o.a.j.t.JMeterThread: Thread finished: TG2 (MID) 2-2
+2025-11-03 23:30:15,748 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-3
+2025-11-03 23:30:15,748 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-3
+2025-11-03 23:30:15,765 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG2 (MID) 2-4
+2025-11-03 23:30:15,765 INFO o.a.j.t.JMeterThread: Thread finished: TG2 (MID) 2-4
+2025-11-03 23:30:15,786 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-2
+2025-11-03 23:30:15,786 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-2
+2025-11-03 23:30:15,891 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-4
+2025-11-03 23:30:15,891 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-4
+2025-11-03 23:30:15,918 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG2 (MID) 2-9
+2025-11-03 23:30:15,919 INFO o.a.j.t.JMeterThread: Thread finished: TG2 (MID) 2-9
+2025-11-03 23:30:15,981 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG2 (MID) 2-8
+2025-11-03 23:30:15,981 INFO o.a.j.t.JMeterThread: Thread finished: TG2 (MID) 2-8
+2025-11-03 23:30:16,003 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG2 (MID) 2-1
+2025-11-03 23:30:16,003 INFO o.a.j.t.JMeterThread: Thread finished: TG2 (MID) 2-1
+2025-11-03 23:30:16,040 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG2 (MID) 2-3
+2025-11-03 23:30:16,040 INFO o.a.j.t.JMeterThread: Thread finished: TG2 (MID) 2-3
+2025-11-03 23:30:16,040 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-15
+2025-11-03 23:30:16,041 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-15
+2025-11-03 23:30:16,088 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-1
+2025-11-03 23:30:16,088 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-1
+2025-11-03 23:30:16,113 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-8
+2025-11-03 23:30:16,114 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-8
+2025-11-03 23:30:16,133 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG2 (MID) 2-7
+2025-11-03 23:30:16,133 INFO o.a.j.t.JMeterThread: Thread finished: TG2 (MID) 2-7
+2025-11-03 23:30:16,135 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-6
+2025-11-03 23:30:16,135 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-6
+2025-11-03 23:30:16,195 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-10
+2025-11-03 23:30:16,195 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-10
+2025-11-03 23:30:16,232 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: TG3 (HIGH) 3-14
+2025-11-03 23:30:16,232 INFO o.a.j.t.JMeterThread: Thread finished: TG3 (HIGH) 3-14
+2025-11-03 23:30:16,233 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-03 23:30:16,235 INFO o.a.j.r.Summariser: summary +    212 in 00:00:16 =   13.1/s Avg:  2525 Min:   451 Max:  7907 Err:     0 (0.00%) Active: 0 Started: 30 Finished: 30
+2025-11-03 23:30:16,237 INFO o.a.j.r.Summariser: summary =   3611 in 00:05:02 =   12.0/s Avg:  2385 Min:    48 Max: 13203 Err:     0 (0.00%)
