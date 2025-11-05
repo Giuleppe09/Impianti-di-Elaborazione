@@ -64,39 +64,56 @@ def get_metrics_from_file(file_path):
     
     return avg_throughput, med_throughput, all_elapsed_ms
 
-# --- FUNZIONE PARSING (INVARIATA) ---
+# --- FUNZIONE PARSING (MODIFICATA) ---
 def parse_filename(filename):
     """
-    Analizza il nome del file per estrarre CTTx.
+    Analizza il nome del file per estrarre il valore CTT.
+    Pattern atteso: Test_Plan_CTT_100_risultati.csv
     """
     base_filename = os.path.basename(filename)
-    pattern = r'(CTT\d+)'
+    # Cerca il pattern specifico: Test_Plan_CTT_(\d+)_risultati.csv
+    # \d+ cattura una o più cifre (il valore CTT)
+    # \.csv fa l'escape del punto prima di csv
+    pattern = r'Test_Plan_CTT_(\d+)_risultati\.csv'
     match = re.search(pattern, base_filename)
+    
     if match:
+        ctt_val_str = match.group(1) # Es. '100'
+        ctt_val_int = int(ctt_val_str)
+        
+        # Ricrea il 'ctt_name' (es. 'CTT100') per coerenza con il resto dello script
+        ctt_name = f'CTT{ctt_val_str}' 
+        
         return {
-            'ctt_name': match.group(1),
-            'ctt_val': int(re.search(r'\d+', match.group(1)).group()),
+            'ctt_name': ctt_name,    # Es. 'CTT100'
+            'ctt_val': ctt_val_int,  # Es. 100
             'filename': filename
         }
     return None
 
-# --- LOGICA PRINCIPALE (MODIFICATA E SEMPLIFICATA) ---
+# --- LOGICA PRINCIPALE (MODIFICATA) ---
 def main():
-    csv_files = glob.glob('RisultatiPreSerietà/*.csv')
+    # MODIFICA 1: Aggiornato il percorso della cartella
+    search_path = 'JMeter_Logs/*.csv'
+    csv_files = glob.glob(search_path)
+    
     if not csv_files:
-        print("Nessun file CSV trovato nella directory specificata.")
+        print(f"Nessun file CSV trovato nel percorso: {search_path}")
         return
 
     grouped_files = defaultdict(list)
     for csv_file in csv_files:
         if 'capacity_plots' in csv_file or 'capacity_test_summary.csv' in csv_file:
             continue
+            
+        # MODIFICA 2: La nuova funzione parse_filename gestisce il nuovo pattern
         parsed = parse_filename(csv_file)
+        
         if parsed:
             key = parsed['ctt_name']
             grouped_files[key].append(parsed['filename'])
         else:
-            print(f"File saltato (non corrisponde al pattern CTT): {csv_file}")
+            print(f"File saltato (non corrisponde al pattern 'Test_Plan_CTT_...'): {csv_file}")
 
     if not grouped_files:
         print("Nessun file CTT valido trovato da elaborare.")
@@ -104,19 +121,17 @@ def main():
 
     results_list = []
 
-    # Ordina i gruppi in base al valore numerico del CTT
+    # Ordina i gruppi in base al valore numerico del CTT (es. CTT100, CTT200)
+    # Questa logica funziona ancora perché 'parse_filename' ricrea 'CTT100'
     sorted_groups = sorted(grouped_files.items(), key=lambda item: int(re.search(r'\d+', item[0]).group()))
 
     # Itera su ogni gruppo CTT (ora con un solo file per gruppo)
     for ctt_name, file_list in sorted_groups:
         
-        # Se per qualche motivo un gruppo è vuoto, saltalo
         if not file_list:
             continue
 
-        # --- MODIFICA CHIAVE ---
-        # Poiché c'è un solo file, lo prendiamo direttamente.
-        # Non serve più un ciclo interno o liste per aggregare più file.
+        # Prendiamo il primo (e unico) file per questo gruppo CTT
         file_path = file_list[0]
         
         print(f"\nElaborazione gruppo: {ctt_name} (file: {file_path})")
@@ -124,17 +139,14 @@ def main():
         metrics = get_metrics_from_file(file_path)
         
         if metrics:
-            # Estrai le metriche calcolate dal file.
-            # avg_throughput e med_throughput sono già la media/mediana dei thread group DENTRO il file.
             avg_throughput, med_throughput, all_elapsed_ms = metrics
             
-            # Calcola media e mediana sulla lista completa di elapsed del file
             mean_elapsed_ms = statistics.mean(all_elapsed_ms) if all_elapsed_ms else 0
             median_elapsed_ms = statistics.median(all_elapsed_ms) if all_elapsed_ms else 0
             
+            # Estrae il valore numerico (es. 100) da 'CTT100'
             ctt_numeric_val = int(re.search(r'\d+', ctt_name).group())
 
-            # Aggiungi direttamente ai risultati finali
             results_list.append({
                 'ctt_val': ctt_numeric_val,
                 'throughput_mean': avg_throughput,
@@ -145,11 +157,11 @@ def main():
 
             print(f'Risultati per: {ctt_name}')
             print(f'  --- Basato sulla MEDIA ---')
-            print(f'    Avg Throughput: {avg_throughput:.2f} req/s')
-            print(f'    Avg Delay: {mean_elapsed_ms:.2f} ms')
+            print(f'     Avg Throughput: {avg_throughput:.2f} req/s')
+            print(f'     Avg Delay: {mean_elapsed_ms:.2f} ms')
             print(f'  --- Basato sulla MEDIANA ---')
-            print(f'    Median Throughput: {med_throughput:.2f} req/s')
-            print(f'    Median Delay: {median_elapsed_ms:.2f} ms (calcolata su {len(all_elapsed_ms)} richieste)')
+            print(f'     Median Throughput: {med_throughput:.2f} req/s')
+            print(f'     Median Delay: {median_elapsed_ms:.2f} ms (calcolata su {len(all_elapsed_ms)} richieste)')
         else:
             print(f'  >> Nessun dato valido trovato per {ctt_name}, saltato.')
 

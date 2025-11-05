@@ -1,0 +1,25 @@
+﻿Local Here(
+	table1 = Open(
+		"$DESKTOP/Impianti/WorkLoad_Characterization/vmstat_cleaned.jmp"
+	);
+	table1 << Distribution(
+		Continuous Distribution( Column( :r ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :b ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :swpd ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :free ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :buff ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :cache ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :si ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :so ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :bi ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :bo ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :in ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :cs ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :us ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :sy ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :id ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :wa ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :st ), Process Capability( 0 ) ),
+		Continuous Distribution( Column( :gu ), Process Capability( 0 ) )
+	);
+)
