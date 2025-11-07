@@ -14,7 +14,7 @@ print(f"Colonne dati originali definite: {ORIGINAL_DATA_COLUMNS}")
 # --- 2. Lettura dei dati ---
 try:
     # Il nome del file è lo stesso, ma ora caricherà la nuova versione
-    file_name = 'WorkloadCharacterization_Results_PCA_Clustering.xlsx'
+    file_name = 'WorkloadCharacterization_Results_PCA5_Cluster13.xlsx'
     df = pd.read_excel(file_name)
     
     print(f"\nFile CSV '{file_name}' caricato con successo.")
@@ -35,7 +35,7 @@ except Exception as e:
 # Identifica le colonne PCA (Principale1, Principale2, ...)
 pca_columns = [col for col in df.columns if col.startswith('Principale')]
 # Identifica la colonna di clustering
-cluster_column = 'Cluster'
+cluster_column = 'PCA5_Cluster13'
 
 # Verifica che le colonne esistano
 if not pca_columns:
