@@ -1,4 +1,5 @@
 import pandas as pd
+import re # Importato per l'ordinamento naturale
 
 def analizza_assegnazione_unica(file_csv):
     """
@@ -14,6 +15,7 @@ def analizza_assegnazione_unica(file_csv):
     """
     try:
         # Carica il file CSV
+        # MODIFICA: La tua versione caricava un .xlsx, mantengo pd.read_excel
         df = pd.read_excel(file_csv)
         print(f"File '{file_csv}' caricato con successo.")
         
@@ -26,7 +28,7 @@ def analizza_assegnazione_unica(file_csv):
         
         if df_conteggi.empty:
             print("Errore: Impossibile trovare righe con 'Cella' uguale a 'Conteggio'.")
-            return
+            return None # Modificato per restituire None in caso di errore
 
         print(f"\nTrovate {len(df_conteggi)} righe di 'Conteggio'.")
 
@@ -40,7 +42,7 @@ def analizza_assegnazione_unica(file_csv):
         n_clusters = len(df_counts_only)
         if n_clusters == 0:
             print("Nessun dato di conteggio trovato dopo il filtraggio.")
-            return
+            return None # Modificato per restituire None
             
         # 3. Trasforma la matrice (Cluster x Richieste) in una lista ordinata
         all_counts_series = df_counts_only.stack()
@@ -80,11 +82,49 @@ def analizza_assegnazione_unica(file_csv):
 
     except FileNotFoundError:
         print(f"Errore: File '{file_csv}' non trovato.")
+        return None
     except Exception as e:
         print(f"Si è verificato un errore imprevisto: {e}")
+        return None
 
-# Nome del file CSV caricato
+# --- NUOVA SEZIONE PER SCRITTURA FILE TXT ---
+
+def natural_sort_key(s):
+    """
+    Funzione chiave per l'ordinamento "naturale".
+    Permette di ordinare 'Richiesta 2' prima di 'Richiesta 10'.
+    """
+    return [int(text) if text.isdigit() else text.lower()
+            for text in re.split('([0-9]+)', str(s))]
+
+# Nome del file Excel da analizzare
 file_da_analizzare = "Contingenza.xlsx"
+nome_file_output = "richieste_ordinate.txt"
 
-# Esegui l'analisi
-analizza_assegnazione_unica(file_da_analizzare)
+# Esegui l'analisi e cattura i risultati
+risultati_assegnazione = analizza_assegnazione_unica(file_da_analizzare)
+
+# Verifica se l'analisi ha prodotto risultati prima di scrivere il file
+if risultati_assegnazione:
+    # 1. Estrai solo i nomi delle richieste
+    richieste_assegnate = [valore[0] for valore in risultati_assegnazione.values()]
+    
+    # 2. Ordina le richieste utilizzando l'ordinamento naturale
+    richieste_ordinate = sorted(richieste_assegnate, key=natural_sort_key)
+    
+    # 3. Scrivi su file .txt
+    try:
+        with open(nome_file_output, 'w', encoding='utf-8') as f:
+            for richiesta in richieste_ordinate:
+                f.write(f"{richiesta}\n")
+        
+        print(f"\n--- Output File ---")
+        print(f"File '{nome_file_output}' creato con successo.")
+        print(f"Contiene {len(richieste_ordinate)} richieste ordinate.")
+
+    except Exception as e:
+        print(f"\nErrore durante la scrittura del file di output: {e}")
+else:
+    print("\nNessun risultato di assegnazione da scrivere su file.")
+
+# --- FINE SCRIPT ---
