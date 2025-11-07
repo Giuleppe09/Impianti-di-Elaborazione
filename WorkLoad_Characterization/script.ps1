@@ -14,8 +14,8 @@ $JMX_DIR = $WorkDir # Usa la cartella dello script
 $JTL_DIR = $WorkDir # Usa la cartella dello script
 
 # --- Configurazione Esecuzione ---
-$jmxFileToRun = "TestPlan_WorkLoadCharacterization.jmx"
-$jtlOutputFileName = "WorkloadCharacterization_Results.csv" # Nome del file JTL di output
+$jmxFileToRun = "TestPlan_Sintetico.jmx"
+$jtlOutputFileName = "WorkloadCharacterization_Results_Sinth.csv" # Nome del file JTL di output
 
 $testDurationMinutes = 25
 
