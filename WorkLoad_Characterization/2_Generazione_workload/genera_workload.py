@@ -101,7 +101,7 @@ def find_parent(root, target):
 
 def main():
     # File di default (hardcoded)
-    input_jmx = "3_TestPlan_WC1.jmx"
+    input_jmx = "TestPlan_WorkLoadCharacterization.jmx"
     txt_file = "richieste_ordinate.txt"
     output_jmx = "TestPlan_Filtered.jmx"
     

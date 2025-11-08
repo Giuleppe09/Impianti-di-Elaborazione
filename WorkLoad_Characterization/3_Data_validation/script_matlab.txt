@@ -1,0 +1,19 @@
+%% Acquisizione dei dati:
+real=xlsread("LLc_PCA_Cluster_Subset.xlsx"); %workload reale
+synthetic=xlsread("LLc_PCA_Cluster_Subset.xlsx"); %workload 
+N=size(real,2); %indice del numero di colonne
+%% Distribuzione normale: test visivo
+figure();
+subplot(2,1,1);
+qqplot(real);
+subplot(2,1,2);
+qqplot(synthetic);
+%% Distribuzione normale: test di Kolmogorov-Smirnov
+[h_ks_real,p_ks_real] = kstest(real);
+[h_ks_synth,p_ks_synth] = kstest(synthetic);
+%% Test di ipotesi non parametrico: test di Wilcoxon
+p_wilc = zeros(1,N);
+h_wilc = zeros(1,N);
+for i= 1:N
+[p_wilc(i), h_wilc(i)] = ranksum(synthetic(:,i), real(:,i));
+end
