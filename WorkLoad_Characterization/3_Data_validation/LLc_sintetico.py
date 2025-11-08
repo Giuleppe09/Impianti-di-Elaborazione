@@ -5,7 +5,7 @@ import os
 
 # 1. Rileva automaticamente il file caricato
 # (Aggiornato al nome del file che hai effettivamente caricato)
-file_input = "LLSinth_Fine_vera.xlsx" 
+file_input = "LL1c.xlsx" 
 
 # 2. Crea un nome di output dinamico
 try:
