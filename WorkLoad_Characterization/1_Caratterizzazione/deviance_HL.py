@@ -4,7 +4,7 @@ import re
 from typing import Dict, Any
 
 # --- 1. Lettura dei dati (Adattato a WorkloadCharacterization...) ---
-file_csv = 'WorkloadCharacterization_Results_PCA5_Cluster13.xlsx'
+file_csv = 'WorkloadCharacterization_Results_PCA5_Cluster17.xlsx'
 
 try:
     df = pd.read_excel(file_csv)
@@ -19,7 +19,7 @@ except Exception as e:
 # Colonne originali (prima della PCA)
 # NOTA: Inferite dal file. Esclude 'success' (bool) e le colonne 'object'.
 original_feature_columns = [
-    'elapsed', 'responseCode', 'bytes', 'sentBytes', 'grpThreads', 
+    'elapsed', 'bytes', 'sentBytes', 'grpThreads', 
     'allThreads', 'Latency', 'IdleTime', 'Connect'
 ]
 
@@ -59,7 +59,7 @@ print(f"----------------------------------------------------------")
 # Trova automaticamente le colonne 'PrincipaleX'
 pca_columns = [col for col in df.columns if col.startswith('Principale')]
 # Nome colonna cluster specifico di questo file
-cluster_col_name = 'PCA5_Cluster13' 
+cluster_col_name = 'Cluster' 
 
 print(f"Trovate {len(pca_columns)} colonne PCA: {', '.join(pca_columns)}")
 if cluster_col_name in df.columns:

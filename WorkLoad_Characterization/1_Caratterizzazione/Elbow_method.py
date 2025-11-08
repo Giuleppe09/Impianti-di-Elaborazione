@@ -1,28 +1,28 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np # Importiamo numpy per creare l'elenco di numeri
+import numpy as np
 
-# Caricamento del CSV
-nomi_colonne = ['Numero di cluster', 'Distanza', 'Leader', 'Subordinato']
-df = pd.read_csv(
-    "Elbow_wc.csv",
-    sep=',',
-    decimal=',',
-    engine='python',
-    header=None,
-    skiprows=1,
-    names=nomi_colonne
+# Caricamento del file Excel
+df = pd.read_excel(
+    "Elbow_wc.xlsx",
+    header=0,  # La prima riga contiene i nomi delle colonne
+    engine='openpyxl'
 )
+
+# Converti 'Numero di cluster' in intero (per sicurezza)
+df['Numero di cluster'] = df['Numero di cluster'].astype(int)
 
 # Estrai i dati da visualizzare (gli ultimi 80 punti)
 dati_grafico = df[-80:]
 
 # Creazione della figura e degli assi
-fig, ax = plt.subplots(figsize=(15, 8)) # Aumentiamo le dimensioni per una migliore leggibilità
+fig, ax = plt.subplots(figsize=(15, 8))
 
 # Traccia il grafico con lo stile desiderato
-ax.plot(dati_grafico['Numero di cluster'], dati_grafico['Distanza'], marker='o', linestyle='-', color='cyan', label='Distanza')
-ax.fill_between(dati_grafico['Numero di cluster'], dati_grafico['Distanza'], alpha=0.3, color='cyan')
+ax.plot(dati_grafico['Numero di cluster'], dati_grafico['Distanza'], 
+        marker='o', linestyle='-', color='cyan', label='Distanza')
+ax.fill_between(dati_grafico['Numero di cluster'], dati_grafico['Distanza'], 
+                alpha=0.3, color='cyan')
 
 # Impostazioni dei titoli e delle etichette
 ax.set_xlabel('Number of Clusters', fontsize=14)
@@ -35,24 +35,14 @@ ax.legend()
 ax.set_facecolor('grey')
 fig.set_facecolor('white')
 
-# --- MODIFICA PER MOSTRARE TUTTI I NUMERI SULL'ASSE X ---
-
-# 1. Determina il range dei cluster da visualizzare
+# Mostra tutti i numeri sull'asse X
 min_cluster = dati_grafico['Numero di cluster'].min()
 max_cluster = dati_grafico['Numero di cluster'].max()
-
-# 2. Crea un elenco di ogni numero intero in quel range
 all_cluster_ticks = np.arange(min_cluster, max_cluster + 1)
-
-# 3. Imposta queste tacche sull'asse X
 ax.set_xticks(all_cluster_ticks)
+plt.xticks(rotation=90, fontsize=8)
 
-# 4. Ruota le etichette per evitare che si sovrappongano
-plt.xticks(rotation=90, fontsize=8) # Ruota di 90 gradi e riduce la dimensione del font
-
-# --- Fine della modifica ---
-
-# Adatta il layout per assicurarti che tutto sia visibile
+# Adatta il layout
 plt.tight_layout()
 
 # Mostra il grafico
