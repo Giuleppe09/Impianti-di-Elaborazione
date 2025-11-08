@@ -5,7 +5,7 @@ import os
 
 # 1. Rileva automaticamente il file caricato
 # (Aggiornato al nome del file che hai effettivamente caricato)
-file_input = "LL1c.xlsx" 
+file_input = "LL_sintc.xlsx" 
 
 # 2. Crea un nome di output dinamico
 try:
