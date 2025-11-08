@@ -14,8 +14,8 @@ $JMX_DIR = $WorkDir # Usa la cartella dello script
 $JTL_DIR = $WorkDir # Usa la cartella dello script
 
 # --- Configurazione Esecuzione ---
-$jmxFileToRun = "3_TestPlan_WC1.jmx"
-$jtlOutputFileName = "HL1_output.csv" # Nome del file JTL di output
+$jmxFileToRun = "TestPlan_Filtered.jmx"
+$jtlOutputFileName = "HL1_SINTH.csv" # Nome del file JTL di output
 
 $testDurationMinutes = 25
 
