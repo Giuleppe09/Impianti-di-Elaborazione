@@ -15,13 +15,13 @@ colonne che precedono 'Principale1', più la colonna del cluster.
 # ==============================================================================
 
 # 1. Nome del file Excel di input
-file_excel = "risultatiLLPCA5_Cluster20.xlsx"
+file_excel = "LLSinth_PCA7_Cluster13.xlsx"
 
 # 2. Numero di componenti principali da usare come feature per il calcolo.
-numero_componenti = 5
+numero_componenti = 7
 
 # 3. Nome esatto della colonna che contiene i cluster da analizzare.
-colonna_cluster = "PCA5_Cluster20"
+colonna_cluster = "Cluster"
 
 # ==============================================================================
 # --- INIZIO SCRIPT (NON MODIFICARE DA QUI IN POI) ---

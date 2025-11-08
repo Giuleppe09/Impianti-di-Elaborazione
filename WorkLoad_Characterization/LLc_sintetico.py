@@ -1,56 +1,81 @@
 import pandas as pd
+import os
 
-# --- Configurazione ---
+# --- Configurazione Automatica ---
 
-# Questo è il file che hai caricato e che contiene i dati
-file_input = "vmStatTestSintetico_PCA_Clustering.xlsx" 
+# 1. Rileva automaticamente il file caricato
+# (Aggiornato al nome del file che hai effettivamente caricato)
+file_input = "LLSinth_Fine_vera.xlsx" 
 
-# Nome del nuovo file che verrà creato
-file_output = "LLc1.csv"
+# 2. Crea un nome di output dinamico
+try:
+    file_base_name = os.path.splitext(file_input)[0].split(" ")[0] # Prende 'LLc'
+except:
+    file_base_name = "output"
 
-# Colonne che vuoi conservare per il test d'ipotesi
-# (Basate sullo snippet del tuo file: 5 componenti + 1 colonna cluster)
-colonne_da_tenere = [
-    'Principale1', 
-    'Principale2', 
-    'Principale3', 
-    'Principale4', 
-    'Principale5',
-    'PCA5_Cluster20' # La colonna con i cluster
-]
+# === MODIFICA QUI ===
+# Cambiato il nome del file di output in .xlsx
+file_output = f"{file_base_name}_PCA_Cluster_Subset.xlsx"
 
 # --- Esecuzione ---
 
 print(f"Tentativo di leggere il file: '{file_input}'")
 
 try:
-    # Leggo il file CSV (che è il formato del file che hai caricato)
-    data = pd.read_excel(file_input)
-    print("File letto con successo.")
+    # Logica di caricamento flessibile (prima Excel, poi CSV)
+    try:
+        data = pd.read_excel(file_input)
+        print("File letto con successo come Excel.")
+    except Exception as e_excel:
+        # Se fallisce (es. perché è un CSV), prova a leggerlo come CSV
+        print(f"Lettura Excel fallita (Errore: {e_excel}), tentativo come CSV...")
+        data = pd.read_csv(file_input)
+        print("File letto con successo come CSV.")
     
-    # Verifico se tutte le colonne richieste esistono
     colonne_esistenti = data.columns.tolist()
-    colonne_mancanti = [col for col in colonne_da_tenere if col not in colonne_esistenti]
     
-    if colonne_mancanti:
+    # 3. Rilevamento automatico delle colonne
+    print("\n--- Rilevamento Colonne Automatico ---")
+    
+    # Colonna Cluster (Sempre l'ultima colonna, come richiesto)
+    cluster_col_name = colonne_esistenti[-1]
+    print(f"Colonna Cluster rilevata: '{cluster_col_name}' (L'ultima colonna)")
+    
+    # Colonne PCA (Tutte quelle che iniziano con 'Principale')
+    pca_columns = [col for col in colonne_esistenti if col.startswith('Principale')]
+    
+    if not pca_columns:
         print("ERRORE: Impossibile procedere.")
-        print(f"Le seguenti colonne richieste non sono state trovate nel file: {colonne_mancanti}")
+        print("Nessuna colonna che inizia con 'Principale' è stata trovata.")
         print(f"Le colonne disponibili sono: {colonne_esistenti}")
-    else:
-        # Seleziono solo le colonne desiderate
-        output_data = data[colonne_da_tenere]
+        exit()
         
-        # Salvo il nuovo file CSV
-        output_data.to_csv(file_output, index=False)
-        
-        print("-" * 30)
-        print(f"File '{file_output}' creato con successo.")
-        print("Contiene SOLO le componenti principali e la colonna cluster.")
-        print("Puoi usare questo file per il tuo test d'ipotesi.")
-        print("\nEcco un'anteprima del file creato:")
-        print(output_data.head())
+    print(f"Colonne PCA rilevate ({len(pca_columns)}): {', '.join(pca_columns)}")
+
+    # Definisci l'elenco finale delle colonne da tenere
+    colonne_da_tenere = pca_columns + [cluster_col_name]
+    
+    # 4. Selezione e Salvataggio
+    
+    # Seleziono solo le colonne desiderate
+    output_data = data[colonne_da_tenere]
+    
+    # === MODIFICA QUI ===
+    # Salvo il nuovo file in formato Excel
+    # Assicurati di avere 'openpyxl' installato (pip install openpyxl)
+    output_data.to_excel(file_output, index=False)
+    
+    print("-" * 30)
+    print(f"File '{file_output}' (Excel) creato con successo.")
+    print("Contiene SOLO le componenti principali e la colonna cluster rilevate.")
+    print("\nEcco un'anteprima dei dati salvati (prime 5 righe):")
+    # uso .to_string() per garantire una formattazione corretta
+    print(output_data.head().to_string()) 
 
 except FileNotFoundError:
     print(f"ERRORE: File non trovato: '{file_input}'. Assicurati che sia stato caricato.")
+except ImportError:
+    print("ERRORE: Manca la libreria 'openpyxl'.")
+    print("Per salvare in Excel, esegui: pip install openpyxl")
 except Exception as e:
     print(f"Si è verificato un errore inaspettato: {e}")
