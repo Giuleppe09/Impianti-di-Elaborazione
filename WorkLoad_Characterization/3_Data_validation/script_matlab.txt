@@ -1,6 +1,6 @@
 %% Acquisizione dei dati:
-real=xlsread("LLc_PCA_Cluster_Subset.xlsx"); %workload reale
-synthetic=xlsread("LLc_PCA_Cluster_Subset.xlsx"); %workload 
+real=xlsread("LLReal_PCA_Cluster_Subset.xlsx"); %workload reale
+synthetic=xlsread("LLSint_PCA_Cluster_Subset.xlsx"); %workload 
 N=size(real,2); %indice del numero di colonne
 %% Distribuzione normale: test visivo
 figure();
