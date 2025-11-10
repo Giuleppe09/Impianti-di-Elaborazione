@@ -4,7 +4,7 @@ import re
 from typing import Dict, Any
 
 # --- 1. Lettura dei dati (Adattato a WorkloadCharacterization...) ---
-file_csv = 'LLReal_LLReal.xlsx'
+file_csv = 'HL7_PCA5_Cluster15.xlsx'
 
 try:
     df = pd.read_excel(file_csv)
@@ -20,7 +20,7 @@ except Exception as e:
 # NOTA: Inferite dal file. Esclude 'success' (bool) e le colonne 'object'.
 original_feature_columns = [
     'elapsed', 'bytes', 'sentBytes', 'grpThreads', 
-    'allThreads', 'Latency', 'IdleTime', 'Connect'
+    'Latency', 'Connect'
 ]
 
 # Verifica che le colonne esistano
