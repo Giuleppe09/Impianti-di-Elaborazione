@@ -5,7 +5,7 @@ import re
 from typing import Dict, Any
 
 # --- 1. Lettura dei dati (Adattato a LLc.xlsx) ---
-file_excel = 'LL1c.xlsx'
+file_excel = 'LLReal_PCA5_Cluster19.xlsx'
 file_csv = 'LLc.csv'
 
 try:

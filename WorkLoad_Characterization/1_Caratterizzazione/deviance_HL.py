@@ -4,7 +4,7 @@ import re
 from typing import Dict, Any
 
 # --- 1. Lettura dei dati (Adattato a WorkloadCharacterization...) ---
-file_csv = 'WorkLoad_Real.xlsx'
+file_csv = 'LLReal_LLReal.xlsx'
 
 try:
     df = pd.read_excel(file_csv)

@@ -4,7 +4,7 @@ import numpy as np
 
 # Caricamento del file Excel
 df = pd.read_excel(
-    "CronologiaHL.xlsx",
+    "Cronologia1.xlsx",
     header=0,  # La prima riga contiene i nomi delle colonne
     engine='openpyxl'
 )

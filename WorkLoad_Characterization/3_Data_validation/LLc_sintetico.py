@@ -5,7 +5,7 @@ import os
 
 # 1. Rileva automaticamente il file caricato
 # (Aggiornato al nome del file che hai effettivamente caricato)
-file_input = "LLSint.xlsx" 
+file_input = "LLSint_PCA5_Cluster19.xlsx" 
 
 # 2. Crea un nome di output dinamico
 try:
