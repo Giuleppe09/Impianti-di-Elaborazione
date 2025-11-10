@@ -5,7 +5,7 @@ import re
 from typing import Dict, Any
 
 # --- 1. Lettura dei dati (Adattato a LLc.xlsx) ---
-file_excel = 'LLReal_PCA5_Cluster19.xlsx'
+file_excel = 'LLReal7_PCA6_Cluster30.xlsx'
 file_csv = 'LLc.csv'
 
 try:
@@ -25,8 +25,8 @@ except Exception as e:
 
 # Colonne originali (prima della PCA)
 original_feature_columns = [
-    'r', 'b', 'swpd', 'free', 'buff', 'cache', 'si', 'so', 'bi', 'bo', 
-    'in', 'cs', 'us', 'sy', 'id', 'wa', 'st', 'gu'
+    'r', 'free', 'bi', 'bo', 
+    'cs', 'us', 'sy', 'wa'
 ]
 
 # Verifica che le colonne esistano
