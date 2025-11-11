@@ -15,10 +15,10 @@ colonne che precedono 'Principale1', più la colonna del cluster.
 # ==============================================================================
 
 # 1. Nome del file Excel di input
-file_excel = "LLReal_PCA5_Cluster19.xlsx"
+file_excel = "LLSint_PCA5_Cluster19.xlsx"
 
 # 2. Numero di componenti principali da usare come feature per il calcolo.
-numero_componenti = 7
+numero_componenti = 5
 
 # 3. Nome esatto della colonna che contiene i cluster da analizzare.
 colonna_cluster = "Cluster"
@@ -54,10 +54,6 @@ try:
     colonne_mancanti = [col for col in colonne_necessarie if col not in data.columns]
     if colonne_mancanti:
         raise ValueError(f"Le seguenti colonne non sono state trovate: {colonne_mancanti}")
-    
-    #Salva le conmponenti principali per la data validation
-    componenti_principali = data[feature_columns]  
-    
 
 except (ValueError, KeyError) as e:
     print(f"ERRORE di configurazione o formato file: {e}")
@@ -95,14 +91,15 @@ closest_rows_df = pd.DataFrame(closest_rows)
 output_df = closest_rows_df[colonne_finali_output]
 
 # ★★★ MODIFICA 1: Il nome del file ora finisce con .xlsx ★★★
-output_filename = f"WORKLOAD_SINTETICO_{numero_componenti}PC_{colonna_cluster}.xlsx"
+output_filename = f"{file_excel}_WORKLOAD_SINTETICO_{numero_componenti}PC_{colonna_cluster}.xlsx"
 
 # ★★★ MODIFICA 2: Usa to_excel() invece di to_csv() per salvare in formato Excel ★★★
 output_df.to_excel(output_filename, index=False)
 
 #Secondo output con le sole componenti principali per validazione
-validation_filename = f"DATA_VALIDATION_PCA_{numero_componenti}PC_{colonna_cluster}.xlsx"
-componenti_principali.to_excel(validation_filename, index=False)
+validation_filename = f"{file_excel}_DATA_VALIDATION_PCA_{numero_componenti}PC_{colonna_cluster}.xlsx"
+validation_df = closest_rows_df[feature_columns]
+validation_df.to_excel(validation_filename, index=False)
 
 print(f"\n Operazione completata con successo!")
 print(f"Il workload sintetico è stato salvato nel file Excel: {output_filename}")
