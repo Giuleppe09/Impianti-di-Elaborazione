@@ -1,343 +1,374 @@
-2025-11-11 21:34:26,843 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2025-11-11 21:34:26,886 INFO o.a.j.JMeter: Loading user properties from: C:\Users\giuse\Desktop\Impianti\apache-jmeter-5.6.3\bin\user.properties
-2025-11-11 21:34:26,889 INFO o.a.j.JMeter: Loading system properties from: C:\Users\giuse\Desktop\Impianti\apache-jmeter-5.6.3\bin\system.properties
-2025-11-11 21:34:26,909 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
-2025-11-11 21:34:26,910 INFO o.a.j.JMeter: Version 5.6.3
-2025-11-11 21:34:26,910 INFO o.a.j.JMeter: java.version=1.8.0_461
-2025-11-11 21:34:26,910 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
-2025-11-11 21:34:26,910 INFO o.a.j.JMeter: os.name=Windows 10
-2025-11-11 21:34:26,911 INFO o.a.j.JMeter: os.arch=amd64
-2025-11-11 21:34:26,911 INFO o.a.j.JMeter: os.version=10.0
-2025-11-11 21:34:26,911 INFO o.a.j.JMeter: file.encoding=Cp1252
-2025-11-11 21:34:26,911 INFO o.a.j.JMeter: java.awt.headless=true
-2025-11-11 21:34:26,912 INFO o.a.j.JMeter: Max memory     =1073741824
-2025-11-11 21:34:26,912 INFO o.a.j.JMeter: Available Processors =8
-2025-11-11 21:34:26,928 INFO o.a.j.JMeter: Default Locale=English (EN)
-2025-11-11 21:34:26,929 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2025-11-11 21:34:26,929 INFO o.a.j.JMeter: JMeterHome=C:\Users\giuse\Desktop\Impianti\apache-jmeter-5.6.3
-2025-11-11 21:34:26,929 INFO o.a.j.JMeter: user.dir  =C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\WorkLoad_Characterization
-2025-11-11 21:34:26,931 INFO o.a.j.JMeter: PWD       =C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\WorkLoad_Characterization
-2025-11-11 21:34:26,934 INFO o.a.j.JMeter: IP: 192.168.56.1 Name: LAPTOP-ACD2EDOE FullName: LAPTOP-ACD2EDOE
-2025-11-11 21:34:27,002 INFO o.a.j.s.FileServer: Default base='C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\WorkLoad_Characterization'
-2025-11-11 21:34:27,008 INFO o.a.j.s.FileServer: Set new base='C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\WorkLoad_Characterization'
-2025-11-11 21:34:27,473 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2025-11-11 21:34:27,565 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2025-11-11 21:34:27,582 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2025-11-11 21:34:27,604 INFO o.a.j.s.SaveService: Loading file: C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\WorkLoad_Characterization\TestPlan_WorkLoadCharacterization.jmx
-2025-11-11 21:34:27,854 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-11-11 21:34:27,854 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-11-11 21:34:27,854 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-11-11 21:34:27,855 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2025-11-11 21:34:27,855 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2025-11-11 21:34:27,855 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2025-11-11 21:34:28,945 INFO o.a.j.JMeter: Creating summariser <summary>
-2025-11-11 21:34:28,994 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2025-11-11 21:34:28,996 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2025-11-11 21:34:28,996 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2025-11-11 21:34:29,015 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2025-11-11 21:34:29,015 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2025-11-11 21:34:30,112 WARN o.a.j.r.ResultCollector: Error creating directories for C:\Users\ladyc\Desktop
-2025-11-11 21:34:30,117 WARN o.a.j.r.ResultCollector: Error creating directories for C:\Users\ladyc\Desktop
-2025-11-11 21:34:30,120 WARN o.a.j.r.ResultCollector: Error creating directories for C:\Users\ladyc\Desktop
-2025-11-11 21:34:30,123 WARN o.a.j.r.ResultCollector: Error creating directories for C:\Users\ladyc\Desktop
-2025-11-11 21:34:30,125 WARN o.a.j.r.ResultCollector: Error creating directories for C:\Users\ladyc\Desktop
-2025-11-11 21:34:30,162 INFO o.a.j.JMeter: Running test (1762893270162)
-2025-11-11 21:34:30,307 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group 1
-2025-11-11 21:34:30,308 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group Thread Group 1.
-2025-11-11 21:34:30,308 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2025-11-11 21:34:30,309 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=15 ramp-up=15 delayedStart=false
-2025-11-11 21:34:30,352 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-1
-2025-11-11 21:34:30,381 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2025-11-11 21:34:30,381 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: Thread Group 1 to finish before starting next group
-2025-11-11 21:34:30,519 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = LAPTOP-ACD2EDOE
-2025-11-11 21:34:30,543 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
-2025-11-11 21:34:30,549 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2025-11-11 21:34:30,550 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
-2025-11-11 21:34:30,550 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2025-11-11 21:34:30,550 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2025-11-11 21:34:31,092 INFO o.a.j.r.Summariser: summary +      1 in 00:00:01 =    1.1/s Avg:   271 Min:   271 Max:   271 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
-2025-11-11 21:34:31,339 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-2
-2025-11-11 21:34:32,337 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-3
-2025-11-11 21:34:33,336 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-4
-2025-11-11 21:34:34,332 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-5
-2025-11-11 21:34:35,335 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-6
-2025-11-11 21:34:36,314 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-7
-2025-11-11 21:34:37,315 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-8
-2025-11-11 21:34:38,317 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-9
-2025-11-11 21:34:39,317 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-10
-2025-11-11 21:34:40,314 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-11
-2025-11-11 21:34:41,314 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-12
-2025-11-11 21:34:42,315 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-13
-2025-11-11 21:34:43,315 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-14
-2025-11-11 21:34:44,315 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-15
-2025-11-11 21:35:00,101 INFO o.a.j.r.Summariser: summary +    240 in 00:00:29 =    8.3/s Avg:   627 Min:     2 Max:  2768 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
-2025-11-11 21:35:00,104 INFO o.a.j.r.Summariser: summary =    241 in 00:00:30 =    8.0/s Avg:   626 Min:     2 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:35:30,108 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   391 Min:     2 Max:  2533 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
-2025-11-11 21:35:30,111 INFO o.a.j.r.Summariser: summary =    490 in 00:01:00 =    8.2/s Avg:   507 Min:     2 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:36:00,041 INFO o.a.j.r.Summariser: summary +    255 in 00:00:30 =    8.5/s Avg:   425 Min:     2 Max:  2135 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
-2025-11-11 21:36:00,045 INFO o.a.j.r.Summariser: summary =    745 in 00:01:30 =    8.3/s Avg:   479 Min:     2 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:36:30,043 INFO o.a.j.r.Summariser: summary +    243 in 00:00:30 =    8.1/s Avg:   335 Min:     2 Max:  1253 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
-2025-11-11 21:36:30,048 INFO o.a.j.r.Summariser: summary =    988 in 00:02:00 =    8.2/s Avg:   443 Min:     2 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:37:00,013 INFO o.a.j.r.Summariser: summary +    255 in 00:00:30 =    8.5/s Avg:   340 Min:     2 Max:  1887 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
-2025-11-11 21:37:00,020 INFO o.a.j.r.Summariser: summary =   1243 in 00:02:30 =    8.3/s Avg:   422 Min:     2 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:37:30,001 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   249 Min:     2 Max:  1742 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
-2025-11-11 21:37:30,006 INFO o.a.j.r.Summariser: summary =   1492 in 00:03:00 =    8.3/s Avg:   393 Min:     2 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:38:00,048 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.3/s Avg:   162 Min:     2 Max:   816 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
-2025-11-11 21:38:00,055 INFO o.a.j.r.Summariser: summary =   1742 in 00:03:30 =    8.3/s Avg:   360 Min:     2 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:38:30,003 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   138 Min:     1 Max:   767 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
-2025-11-11 21:38:30,009 INFO o.a.j.r.Summariser: summary =   1991 in 00:04:00 =    8.3/s Avg:   332 Min:     1 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:39:00,251 INFO o.a.j.r.Summariser: summary +    252 in 00:00:30 =    8.3/s Avg:   182 Min:     2 Max:   567 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
-2025-11-11 21:39:00,258 INFO o.a.j.r.Summariser: summary =   2243 in 00:04:30 =    8.3/s Avg:   315 Min:     1 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:39:28,465 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-13
-2025-11-11 21:39:28,617 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-8
-2025-11-11 21:39:28,664 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-2
-2025-11-11 21:39:29,165 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-3
-2025-11-11 21:39:29,344 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-14
-2025-11-11 21:39:29,345 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-10
-2025-11-11 21:39:29,408 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-4
-2025-11-11 21:39:29,595 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-5
-2025-11-11 21:39:29,691 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-7
-2025-11-11 21:39:30,062 INFO o.a.j.r.Summariser: summary +    247 in 00:00:30 =    8.3/s Avg:   184 Min:     2 Max:   743 Err:     0 (0.00%) Active: 6 Started: 15 Finished: 9
-2025-11-11 21:39:30,067 INFO o.a.j.r.Summariser: summary =   2490 in 00:05:00 =    8.3/s Avg:   302 Min:     1 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:39:30,072 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-11
-2025-11-11 21:39:30,168 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-6
-2025-11-11 21:39:30,177 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-1
-2025-11-11 21:39:30,208 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-9
-2025-11-11 21:39:30,387 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1 1-15
-2025-11-11 21:39:30,388 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-15
-2025-11-11 21:39:30,405 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1 1-12
-2025-11-11 21:39:30,405 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-12
-2025-11-11 21:39:30,406 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Thread Group 2
-2025-11-11 21:39:30,406 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group Thread Group 2.
-2025-11-11 21:39:30,406 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2025-11-11 21:39:30,407 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=15 ramp-up=15 delayedStart=false
-2025-11-11 21:39:30,412 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-1
-2025-11-11 21:39:30,448 INFO o.a.j.t.ThreadGroup: Started thread group number 2
-2025-11-11 21:39:30,450 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: Thread Group 2 to finish before starting next group
-2025-11-11 21:39:31,411 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-2
-2025-11-11 21:39:32,411 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-3
-2025-11-11 21:39:33,412 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-4
-2025-11-11 21:39:34,423 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-5
-2025-11-11 21:39:35,415 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-6
-2025-11-11 21:39:36,413 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-7
-2025-11-11 21:39:37,416 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-8
-2025-11-11 21:39:38,415 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-9
-2025-11-11 21:39:39,425 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-10
-2025-11-11 21:39:40,427 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-11
-2025-11-11 21:39:41,428 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-12
-2025-11-11 21:39:42,427 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-13
-2025-11-11 21:39:43,420 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-14
-2025-11-11 21:39:44,414 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-15
-2025-11-11 21:40:00,002 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.4/s Avg:   186 Min:     1 Max:   941 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
-2025-11-11 21:40:00,010 INFO o.a.j.r.Summariser: summary =   2740 in 00:05:30 =    8.3/s Avg:   292 Min:     1 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:40:30,066 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.3/s Avg:   152 Min:     1 Max:   551 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
-2025-11-11 21:40:30,072 INFO o.a.j.r.Summariser: summary =   2991 in 00:06:00 =    8.3/s Avg:   280 Min:     1 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:41:00,216 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.3/s Avg:   221 Min:     1 Max:  1669 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
-2025-11-11 21:41:00,223 INFO o.a.j.r.Summariser: summary =   3241 in 00:06:30 =    8.3/s Avg:   275 Min:     1 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:41:30,136 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.4/s Avg:   160 Min:     1 Max:   659 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
-2025-11-11 21:41:30,142 INFO o.a.j.r.Summariser: summary =   3491 in 00:07:00 =    8.3/s Avg:   267 Min:     1 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:42:00,055 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:   184 Min:     1 Max:   647 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
-2025-11-11 21:42:00,062 INFO o.a.j.r.Summariser: summary =   3742 in 00:07:30 =    8.3/s Avg:   262 Min:     1 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:42:30,214 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   169 Min:     1 Max:   841 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
-2025-11-11 21:42:30,221 INFO o.a.j.r.Summariser: summary =   3991 in 00:08:00 =    8.3/s Avg:   256 Min:     1 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:43:00,068 INFO o.a.j.r.Summariser: summary +    252 in 00:00:30 =    8.4/s Avg:   165 Min:     1 Max:   790 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
-2025-11-11 21:43:00,073 INFO o.a.j.r.Summariser: summary =   4243 in 00:08:30 =    8.3/s Avg:   250 Min:     1 Max:  2768 Err:     0 (0.00%)
-2025-11-11 21:43:30,197 INFO o.a.j.r.Summariser: summary +    242 in 00:00:30 =    8.0/s Avg:   519 Min:     1 Max:  3816 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
-2025-11-11 21:43:30,200 INFO o.a.j.r.Summariser: summary =   4485 in 00:09:00 =    8.3/s Avg:   265 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:44:00,046 INFO o.a.j.r.Summariser: summary +    256 in 00:00:30 =    8.6/s Avg:   259 Min:     1 Max:  3020 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
-2025-11-11 21:44:00,049 INFO o.a.j.r.Summariser: summary =   4741 in 00:09:30 =    8.3/s Avg:   265 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:44:28,991 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-4
-2025-11-11 21:44:29,050 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-1
-2025-11-11 21:44:29,066 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-7
-2025-11-11 21:44:29,189 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-6
-2025-11-11 21:44:29,377 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-15
-2025-11-11 21:44:29,434 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-9
-2025-11-11 21:44:29,552 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-2
-2025-11-11 21:44:29,573 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-13
-2025-11-11 21:44:29,842 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-8
-2025-11-11 21:44:30,026 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   147 Min:     1 Max:   874 Err:     0 (0.00%) Active: 6 Started: 30 Finished: 24
-2025-11-11 21:44:30,028 INFO o.a.j.r.Summariser: summary =   4990 in 00:10:00 =    8.3/s Avg:   259 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:44:30,031 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-3
-2025-11-11 21:44:30,124 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-12
-2025-11-11 21:44:30,259 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-10
-2025-11-11 21:44:30,283 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-5
-2025-11-11 21:44:30,418 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-11
-2025-11-11 21:44:30,474 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2 2-14
-2025-11-11 21:44:30,475 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-14
-2025-11-11 21:44:30,475 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : Thread Group 3
-2025-11-11 21:44:30,477 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group Thread Group 3.
-2025-11-11 21:44:30,478 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2025-11-11 21:44:30,478 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=15 ramp-up=15 delayedStart=false
-2025-11-11 21:44:30,482 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-1
-2025-11-11 21:44:30,505 INFO o.a.j.t.ThreadGroup: Started thread group number 3
-2025-11-11 21:44:30,506 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: Thread Group 3 to finish before starting next group
-2025-11-11 21:44:31,482 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-2
-2025-11-11 21:44:32,482 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-3
-2025-11-11 21:44:33,480 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-4
-2025-11-11 21:44:34,481 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-5
-2025-11-11 21:44:35,485 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-6
-2025-11-11 21:44:36,482 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-7
-2025-11-11 21:44:37,485 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-8
-2025-11-11 21:44:38,484 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-9
-2025-11-11 21:44:39,483 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-10
-2025-11-11 21:44:40,482 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-11
-2025-11-11 21:44:41,482 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-12
-2025-11-11 21:44:42,482 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-13
-2025-11-11 21:44:43,483 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-14
-2025-11-11 21:44:44,483 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-15
-2025-11-11 21:45:00,107 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.3/s Avg:   137 Min:     2 Max:   640 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
-2025-11-11 21:45:00,109 INFO o.a.j.r.Summariser: summary =   5241 in 00:10:30 =    8.3/s Avg:   253 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:45:30,063 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   299 Min:     2 Max:  1921 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
-2025-11-11 21:45:30,065 INFO o.a.j.r.Summariser: summary =   5490 in 00:11:00 =    8.3/s Avg:   255 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:46:00,050 INFO o.a.j.r.Summariser: summary +    255 in 00:00:30 =    8.5/s Avg:   462 Min:     2 Max:  1979 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
-2025-11-11 21:46:00,052 INFO o.a.j.r.Summariser: summary =   5745 in 00:11:30 =    8.3/s Avg:   264 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:46:30,244 INFO o.a.j.r.Summariser: summary +    246 in 00:00:30 =    8.1/s Avg:   179 Min:     2 Max:   693 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
-2025-11-11 21:46:30,247 INFO o.a.j.r.Summariser: summary =   5991 in 00:12:00 =    8.3/s Avg:   261 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:47:00,109 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:   156 Min:     1 Max:   715 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
-2025-11-11 21:47:00,111 INFO o.a.j.r.Summariser: summary =   6242 in 00:12:30 =    8.3/s Avg:   256 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:47:30,388 INFO o.a.j.r.Summariser: summary +    252 in 00:00:30 =    8.3/s Avg:   225 Min:     2 Max:   910 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
-2025-11-11 21:47:30,390 INFO o.a.j.r.Summariser: summary =   6494 in 00:13:00 =    8.3/s Avg:   255 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:48:00,030 INFO o.a.j.r.Summariser: summary +    247 in 00:00:30 =    8.3/s Avg:   169 Min:     2 Max:   606 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
-2025-11-11 21:48:00,033 INFO o.a.j.r.Summariser: summary =   6741 in 00:13:30 =    8.3/s Avg:   252 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:48:30,004 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:   186 Min:     2 Max:   864 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
-2025-11-11 21:48:30,006 INFO o.a.j.r.Summariser: summary =   6992 in 00:14:00 =    8.3/s Avg:   250 Min:     1 Max:  3816 Err:     0 (0.00%)
-2025-11-11 21:49:00,285 INFO o.a.j.r.Summariser: summary +    207 in 00:00:30 =    6.8/s Avg:  1325 Min:     2 Max:  6353 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
-2025-11-11 21:49:00,288 INFO o.a.j.r.Summariser: summary =   7199 in 00:14:30 =    8.3/s Avg:   281 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:49:29,066 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-1
-2025-11-11 21:49:29,387 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-4
-2025-11-11 21:49:29,447 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-8
-2025-11-11 21:49:29,465 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-15
-2025-11-11 21:49:29,496 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-2
-2025-11-11 21:49:29,518 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-14
-2025-11-11 21:49:29,740 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-13
-2025-11-11 21:49:29,785 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-12
-2025-11-11 21:49:30,091 INFO o.a.j.r.Summariser: summary +    248 in 00:00:30 =    8.3/s Avg:  1068 Min:     2 Max:  5006 Err:     0 (0.00%) Active: 7 Started: 45 Finished: 38
-2025-11-11 21:49:30,093 INFO o.a.j.r.Summariser: summary =   7447 in 00:15:00 =    8.3/s Avg:   307 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:49:30,095 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-11
-2025-11-11 21:49:30,260 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-5
-2025-11-11 21:49:30,269 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-6
-2025-11-11 21:49:30,386 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-3
-2025-11-11 21:49:30,471 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-7
-2025-11-11 21:49:30,538 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-9
-2025-11-11 21:49:30,539 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-9
-2025-11-11 21:49:30,579 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-10
-2025-11-11 21:49:30,580 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-10
-2025-11-11 21:49:30,580 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 4 : Thread Group 4
-2025-11-11 21:49:30,581 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group Thread Group 4.
-2025-11-11 21:49:30,581 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2025-11-11 21:49:30,581 INFO o.a.j.t.ThreadGroup: Starting thread group... number=4 threads=15 ramp-up=15 delayedStart=false
-2025-11-11 21:49:30,584 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-1
-2025-11-11 21:49:30,598 INFO o.a.j.t.ThreadGroup: Started thread group number 4
-2025-11-11 21:49:30,599 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: Thread Group 4 to finish before starting next group
-2025-11-11 21:49:31,584 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-2
-2025-11-11 21:49:32,585 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-3
-2025-11-11 21:49:33,586 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-4
-2025-11-11 21:49:34,584 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-5
-2025-11-11 21:49:35,585 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-6
-2025-11-11 21:49:36,585 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-7
-2025-11-11 21:49:37,584 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-8
-2025-11-11 21:49:38,585 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-9
-2025-11-11 21:49:39,585 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-10
-2025-11-11 21:49:40,585 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-11
-2025-11-11 21:49:41,584 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-12
-2025-11-11 21:49:42,585 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-13
-2025-11-11 21:49:43,584 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-14
-2025-11-11 21:49:44,585 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-15
-2025-11-11 21:50:00,002 INFO o.a.j.r.Summariser: summary +    254 in 00:00:30 =    8.5/s Avg:   269 Min:     2 Max:  1614 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
-2025-11-11 21:50:00,005 INFO o.a.j.r.Summariser: summary =   7701 in 00:15:30 =    8.3/s Avg:   306 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:50:30,277 INFO o.a.j.r.Summariser: summary +    248 in 00:00:30 =    8.2/s Avg:   156 Min:     2 Max:   774 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
-2025-11-11 21:50:30,280 INFO o.a.j.r.Summariser: summary =   7949 in 00:16:00 =    8.3/s Avg:   301 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:51:00,067 INFO o.a.j.r.Summariser: summary +    252 in 00:00:30 =    8.5/s Avg:   219 Min:     3 Max:  1123 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
-2025-11-11 21:51:00,069 INFO o.a.j.r.Summariser: summary =   8201 in 00:16:30 =    8.3/s Avg:   298 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:51:30,057 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   223 Min:     2 Max:   936 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
-2025-11-11 21:51:30,059 INFO o.a.j.r.Summariser: summary =   8450 in 00:17:00 =    8.3/s Avg:   296 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:52:00,122 INFO o.a.j.r.Summariser: summary +    248 in 00:00:30 =    8.2/s Avg:   219 Min:     2 Max:  1013 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
-2025-11-11 21:52:00,124 INFO o.a.j.r.Summariser: summary =   8698 in 00:17:30 =    8.3/s Avg:   294 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:52:30,133 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:   186 Min:     2 Max:   850 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
-2025-11-11 21:52:30,136 INFO o.a.j.r.Summariser: summary =   8949 in 00:18:00 =    8.3/s Avg:   291 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:53:00,106 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   190 Min:     3 Max:  1064 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
-2025-11-11 21:53:00,108 INFO o.a.j.r.Summariser: summary =   9198 in 00:18:30 =    8.3/s Avg:   288 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:53:30,047 INFO o.a.j.r.Summariser: summary +    254 in 00:00:30 =    8.5/s Avg:   206 Min:     2 Max:  1651 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
-2025-11-11 21:53:30,049 INFO o.a.j.r.Summariser: summary =   9452 in 00:19:00 =    8.3/s Avg:   286 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:54:00,240 INFO o.a.j.r.Summariser: summary +    247 in 00:00:30 =    8.2/s Avg:   159 Min:     2 Max:   689 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
-2025-11-11 21:54:00,243 INFO o.a.j.r.Summariser: summary =   9699 in 00:19:30 =    8.3/s Avg:   283 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:54:29,322 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-13
-2025-11-11 21:54:29,340 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-6
-2025-11-11 21:54:29,831 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-8
-2025-11-11 21:54:29,841 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-15
-2025-11-11 21:54:29,866 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-2
-2025-11-11 21:54:30,137 INFO o.a.j.r.Summariser: summary +    248 in 00:00:30 =    8.3/s Avg:   195 Min:     3 Max:   775 Err:     0 (0.00%) Active: 10 Started: 60 Finished: 50
-2025-11-11 21:54:30,139 INFO o.a.j.r.Summariser: summary =   9947 in 00:20:00 =    8.3/s Avg:   281 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:54:30,141 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-12
-2025-11-11 21:54:30,347 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-14
-2025-11-11 21:54:30,354 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-11
-2025-11-11 21:54:30,418 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-3
-2025-11-11 21:54:30,431 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-5
-2025-11-11 21:54:30,536 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-4
-2025-11-11 21:54:30,594 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 4 4-10
-2025-11-11 21:54:30,594 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-10
-2025-11-11 21:54:30,632 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 4 4-9
-2025-11-11 21:54:30,633 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-9
-2025-11-11 21:54:30,845 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 4 4-7
-2025-11-11 21:54:30,845 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-7
-2025-11-11 21:54:30,891 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 4 4-1
-2025-11-11 21:54:30,892 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-1
-2025-11-11 21:54:30,892 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 5 : Thread Group 5
-2025-11-11 21:54:30,893 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group Thread Group 5.
-2025-11-11 21:54:30,893 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2025-11-11 21:54:30,893 INFO o.a.j.t.ThreadGroup: Starting thread group... number=5 threads=15 ramp-up=15 delayedStart=false
-2025-11-11 21:54:30,896 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-1
-2025-11-11 21:54:30,909 INFO o.a.j.t.ThreadGroup: Started thread group number 5
-2025-11-11 21:54:30,910 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2025-11-11 21:54:31,895 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-2
-2025-11-11 21:54:32,895 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-3
-2025-11-11 21:54:33,897 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-4
-2025-11-11 21:54:34,896 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-5
-2025-11-11 21:54:35,896 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-6
-2025-11-11 21:54:36,895 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-7
-2025-11-11 21:54:37,896 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-8
-2025-11-11 21:54:38,896 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-9
-2025-11-11 21:54:39,896 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-10
-2025-11-11 21:54:40,896 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-11
-2025-11-11 21:54:41,895 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-12
-2025-11-11 21:54:42,895 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-13
-2025-11-11 21:54:43,895 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-14
-2025-11-11 21:54:44,895 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-15
-2025-11-11 21:55:00,145 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:   289 Min:     2 Max:  1192 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
-2025-11-11 21:55:00,148 INFO o.a.j.r.Summariser: summary =  10198 in 00:20:30 =    8.3/s Avg:   281 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:55:30,166 INFO o.a.j.r.Summariser: summary +    246 in 00:00:30 =    8.2/s Avg:   224 Min:     1 Max:  1267 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
-2025-11-11 21:55:30,168 INFO o.a.j.r.Summariser: summary =  10444 in 00:21:00 =    8.3/s Avg:   279 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:56:00,016 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.4/s Avg:   162 Min:     1 Max:   615 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
-2025-11-11 21:56:00,018 INFO o.a.j.r.Summariser: summary =  10694 in 00:21:30 =    8.3/s Avg:   277 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:56:30,178 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.3/s Avg:   220 Min:     1 Max:   913 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
-2025-11-11 21:56:30,180 INFO o.a.j.r.Summariser: summary =  10945 in 00:22:00 =    8.3/s Avg:   275 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:57:00,127 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   171 Min:     2 Max:   788 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
-2025-11-11 21:57:00,129 INFO o.a.j.r.Summariser: summary =  11194 in 00:22:30 =    8.3/s Avg:   273 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:57:30,114 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:   196 Min:     2 Max:   780 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
-2025-11-11 21:57:30,117 INFO o.a.j.r.Summariser: summary =  11445 in 00:23:00 =    8.3/s Avg:   271 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:58:00,127 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   154 Min:     2 Max:   819 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
-2025-11-11 21:58:00,129 INFO o.a.j.r.Summariser: summary =  11694 in 00:23:30 =    8.3/s Avg:   269 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:58:30,221 INFO o.a.j.r.Summariser: summary +    252 in 00:00:30 =    8.4/s Avg:   240 Min:     1 Max:  1287 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
-2025-11-11 21:58:30,223 INFO o.a.j.r.Summariser: summary =  11946 in 00:24:00 =    8.3/s Avg:   268 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:59:00,050 INFO o.a.j.r.Summariser: summary +    248 in 00:00:30 =    8.3/s Avg:   236 Min:     2 Max:  1126 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
-2025-11-11 21:59:00,053 INFO o.a.j.r.Summariser: summary =  12194 in 00:24:30 =    8.3/s Avg:   268 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:59:29,084 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-4
-2025-11-11 21:59:29,173 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-5
-2025-11-11 21:59:29,390 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-6
-2025-11-11 21:59:29,513 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-9
-2025-11-11 21:59:29,564 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-11
-2025-11-11 21:59:29,657 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-14
-2025-11-11 21:59:29,747 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-3
-2025-11-11 21:59:30,081 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.3/s Avg:   417 Min:     2 Max:  2548 Err:     0 (0.00%) Active: 8 Started: 75 Finished: 67
-2025-11-11 21:59:30,083 INFO o.a.j.r.Summariser: summary =  12444 in 00:25:00 =    8.3/s Avg:   271 Min:     1 Max:  6353 Err:     0 (0.00%)
-2025-11-11 21:59:30,085 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-12
-2025-11-11 21:59:30,119 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-2
-2025-11-11 21:59:30,496 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-15
-2025-11-11 21:59:30,596 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-1
-2025-11-11 21:59:30,657 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-10
-2025-11-11 21:59:30,668 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-8
-2025-11-11 21:59:30,742 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-13
-2025-11-11 21:59:30,870 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-7
-2025-11-11 21:59:30,870 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2025-11-11 21:59:30,873 INFO o.a.j.r.Summariser: summary +      7 in 00:00:01 =    8.8/s Avg:   273 Min:     5 Max:   503 Err:     0 (0.00%) Active: 0 Started: 75 Finished: 75
-2025-11-11 21:59:30,875 INFO o.a.j.r.Summariser: summary =  12451 in 00:25:01 =    8.3/s Avg:   271 Min:     1 Max:  6353 Err:     0 (0.00%)
+2025-11-11 22:58:22,945 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2025-11-11 22:58:22,989 INFO o.a.j.JMeter: Loading user properties from: C:\Users\giuse\Desktop\Impianti\apache-jmeter-5.6.3\bin\user.properties
+2025-11-11 22:58:22,992 INFO o.a.j.JMeter: Loading system properties from: C:\Users\giuse\Desktop\Impianti\apache-jmeter-5.6.3\bin\system.properties
+2025-11-11 22:58:23,014 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2025-11-11 22:58:23,014 INFO o.a.j.JMeter: Version 5.6.3
+2025-11-11 22:58:23,014 INFO o.a.j.JMeter: java.version=1.8.0_461
+2025-11-11 22:58:23,015 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2025-11-11 22:58:23,015 INFO o.a.j.JMeter: os.name=Windows 10
+2025-11-11 22:58:23,015 INFO o.a.j.JMeter: os.arch=amd64
+2025-11-11 22:58:23,015 INFO o.a.j.JMeter: os.version=10.0
+2025-11-11 22:58:23,015 INFO o.a.j.JMeter: file.encoding=Cp1252
+2025-11-11 22:58:23,016 INFO o.a.j.JMeter: java.awt.headless=true
+2025-11-11 22:58:23,016 INFO o.a.j.JMeter: Max memory     =1073741824
+2025-11-11 22:58:23,016 INFO o.a.j.JMeter: Available Processors =8
+2025-11-11 22:58:23,030 INFO o.a.j.JMeter: Default Locale=English (EN)
+2025-11-11 22:58:23,031 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2025-11-11 22:58:23,032 INFO o.a.j.JMeter: JMeterHome=C:\Users\giuse\Desktop\Impianti\apache-jmeter-5.6.3
+2025-11-11 22:58:23,032 INFO o.a.j.JMeter: user.dir  =C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\WorkLoad_Characterization
+2025-11-11 22:58:23,034 INFO o.a.j.JMeter: PWD       =C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\WorkLoad_Characterization
+2025-11-11 22:58:27,592 INFO o.a.j.JMeter: IP: 192.168.56.1 Name: LAPTOP-ACD2EDOE FullName: LAPTOP-ACD2EDOE
+2025-11-11 22:58:27,662 INFO o.a.j.s.FileServer: Default base='C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\WorkLoad_Characterization'
+2025-11-11 22:58:27,668 INFO o.a.j.s.FileServer: Set new base='C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\WorkLoad_Characterization'
+2025-11-11 22:58:28,124 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2025-11-11 22:58:28,233 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2025-11-11 22:58:28,251 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2025-11-11 22:58:28,273 INFO o.a.j.s.SaveService: Loading file: C:\Users\giuse\Desktop\Impianti\Progetto\Impianti-di-Elaborazione\WorkLoad_Characterization\TestPlan_Filtered.jmx
+2025-11-11 22:58:28,520 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-11 22:58:28,521 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-11 22:58:28,521 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-11 22:58:28,521 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2025-11-11 22:58:28,522 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2025-11-11 22:58:28,522 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2025-11-11 22:58:29,660 INFO o.a.j.JMeter: Creating summariser <summary>
+2025-11-11 22:58:29,706 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2025-11-11 22:58:29,708 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-11 22:58:29,708 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2025-11-11 22:58:29,728 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2025-11-11 22:58:29,728 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2025-11-11 22:58:30,854 WARN o.a.j.r.ResultCollector: Error creating directories for C:\Users\ladyc\Desktop
+2025-11-11 22:58:30,858 WARN o.a.j.r.ResultCollector: Error creating directories for C:\Users\ladyc\Desktop
+2025-11-11 22:58:30,861 WARN o.a.j.r.ResultCollector: Error creating directories for C:\Users\ladyc\Desktop
+2025-11-11 22:58:30,864 WARN o.a.j.r.ResultCollector: Error creating directories for C:\Users\ladyc\Desktop
+2025-11-11 22:58:30,867 WARN o.a.j.r.ResultCollector: Error creating directories for C:\Users\ladyc\Desktop
+2025-11-11 22:58:30,907 INFO o.a.j.JMeter: Running test (1762898310906)
+2025-11-11 22:58:31,049 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group 1
+2025-11-11 22:58:31,050 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group Thread Group 1.
+2025-11-11 22:58:31,050 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-11 22:58:31,051 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=15 ramp-up=15 delayedStart=false
+2025-11-11 22:58:31,088 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-1
+2025-11-11 22:58:31,114 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2025-11-11 22:58:31,114 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: Thread Group 1 to finish before starting next group
+2025-11-11 22:58:31,250 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = LAPTOP-ACD2EDOE
+2025-11-11 22:58:31,277 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2025-11-11 22:58:31,283 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2025-11-11 22:58:31,283 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2025-11-11 22:58:31,284 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2025-11-11 22:58:31,284 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2025-11-11 22:58:31,991 INFO o.a.j.r.Summariser: summary +      1 in 00:00:01 =    0.9/s Avg:   463 Min:   463 Max:   463 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+2025-11-11 22:58:32,074 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-2
+2025-11-11 22:58:33,070 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-3
+2025-11-11 22:58:34,069 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-4
+2025-11-11 22:58:35,068 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-5
+2025-11-11 22:58:36,058 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-6
+2025-11-11 22:58:37,056 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-7
+2025-11-11 22:58:38,055 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-8
+2025-11-11 22:58:39,055 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-9
+2025-11-11 22:58:40,055 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-10
+2025-11-11 22:58:41,055 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-11
+2025-11-11 22:58:42,055 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-12
+2025-11-11 22:58:43,055 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-13
+2025-11-11 22:58:44,056 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-14
+2025-11-11 22:58:45,055 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 1 1-15
+2025-11-11 22:59:00,135 INFO o.a.j.r.Summariser: summary +    235 in 00:00:28 =    8.3/s Avg:   335 Min:    20 Max:  1520 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
+2025-11-11 22:59:00,138 INFO o.a.j.r.Summariser: summary =    236 in 00:00:29 =    8.1/s Avg:   336 Min:    20 Max:  1520 Err:     0 (0.00%)
+2025-11-11 22:59:30,077 INFO o.a.j.r.Summariser: summary +    247 in 00:00:30 =    8.2/s Avg:   187 Min:    20 Max:   762 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
+2025-11-11 22:59:30,080 INFO o.a.j.r.Summariser: summary =    483 in 00:00:59 =    8.2/s Avg:   260 Min:    20 Max:  1520 Err:     0 (0.00%)
+2025-11-11 23:00:00,073 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:   355 Min:    21 Max:  1749 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
+2025-11-11 23:00:00,078 INFO o.a.j.r.Summariser: summary =    734 in 00:01:29 =    8.2/s Avg:   292 Min:    20 Max:  1749 Err:     0 (0.00%)
+2025-11-11 23:00:30,044 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:   186 Min:    21 Max:   827 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
+2025-11-11 23:00:30,049 INFO o.a.j.r.Summariser: summary =    985 in 00:01:59 =    8.3/s Avg:   265 Min:    20 Max:  1749 Err:     0 (0.00%)
+2025-11-11 23:01:00,160 INFO o.a.j.r.Summariser: summary +    252 in 00:00:30 =    8.4/s Avg:   241 Min:    20 Max:  1197 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
+2025-11-11 23:01:00,165 INFO o.a.j.r.Summariser: summary =   1237 in 00:02:29 =    8.3/s Avg:   260 Min:    20 Max:  1749 Err:     0 (0.00%)
+2025-11-11 23:01:30,057 INFO o.a.j.r.Summariser: summary +    247 in 00:00:30 =    8.3/s Avg:   267 Min:    19 Max:  1355 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
+2025-11-11 23:01:30,066 INFO o.a.j.r.Summariser: summary =   1484 in 00:02:59 =    8.3/s Avg:   261 Min:    19 Max:  1749 Err:     0 (0.00%)
+2025-11-11 23:02:00,014 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:   182 Min:    21 Max:   803 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
+2025-11-11 23:02:00,019 INFO o.a.j.r.Summariser: summary =   1735 in 00:03:29 =    8.3/s Avg:   250 Min:    19 Max:  1749 Err:     0 (0.00%)
+2025-11-11 23:02:30,065 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:   356 Min:    19 Max:  1790 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
+2025-11-11 23:02:30,070 INFO o.a.j.r.Summariser: summary =   1986 in 00:03:59 =    8.3/s Avg:   263 Min:    19 Max:  1790 Err:     0 (0.00%)
+2025-11-11 23:03:00,281 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.2/s Avg:   254 Min:    21 Max:  1366 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
+2025-11-11 23:03:00,287 INFO o.a.j.r.Summariser: summary =   2235 in 00:04:29 =    8.3/s Avg:   262 Min:    19 Max:  1790 Err:     0 (0.00%)
+2025-11-11 23:03:30,046 INFO o.a.j.r.Summariser: summary +    247 in 00:00:30 =    8.3/s Avg:   238 Min:    20 Max:  1481 Err:     0 (0.00%) Active: 15 Started: 15 Finished: 0
+2025-11-11 23:03:30,051 INFO o.a.j.r.Summariser: summary =   2482 in 00:04:59 =    8.3/s Avg:   260 Min:    19 Max:  1790 Err:     0 (0.00%)
+2025-11-11 23:03:30,057 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-6
+2025-11-11 23:03:30,174 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-14
+2025-11-11 23:03:30,211 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-13
+2025-11-11 23:03:30,349 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-9
+2025-11-11 23:03:30,378 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-1
+2025-11-11 23:03:30,559 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-12
+2025-11-11 23:03:30,693 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-15
+2025-11-11 23:03:30,700 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-5
+2025-11-11 23:03:30,736 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-11
+2025-11-11 23:03:30,766 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-2
+2025-11-11 23:03:30,808 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-8
+2025-11-11 23:03:30,854 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-4
+2025-11-11 23:03:30,997 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-10
+2025-11-11 23:03:31,113 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1 1-7
+2025-11-11 23:03:31,114 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-7
+2025-11-11 23:03:31,248 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 1 1-3
+2025-11-11 23:03:31,249 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 1 1-3
+2025-11-11 23:03:31,249 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 2 : Thread Group 2
+2025-11-11 23:03:31,250 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group Thread Group 2.
+2025-11-11 23:03:31,250 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-11 23:03:31,251 INFO o.a.j.t.ThreadGroup: Starting thread group... number=2 threads=15 ramp-up=15 delayedStart=false
+2025-11-11 23:03:31,254 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-1
+2025-11-11 23:03:31,274 INFO o.a.j.t.ThreadGroup: Started thread group number 2
+2025-11-11 23:03:31,274 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: Thread Group 2 to finish before starting next group
+2025-11-11 23:03:32,254 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-2
+2025-11-11 23:03:33,253 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-3
+2025-11-11 23:03:34,255 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-4
+2025-11-11 23:03:35,255 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-5
+2025-11-11 23:03:36,253 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-6
+2025-11-11 23:03:37,256 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-7
+2025-11-11 23:03:38,254 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-8
+2025-11-11 23:03:39,255 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-9
+2025-11-11 23:03:40,257 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-10
+2025-11-11 23:03:41,252 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-11
+2025-11-11 23:03:42,257 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-12
+2025-11-11 23:03:43,257 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-13
+2025-11-11 23:03:44,255 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-14
+2025-11-11 23:03:45,254 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 2 2-15
+2025-11-11 23:04:00,197 INFO o.a.j.r.Summariser: summary +    258 in 00:00:30 =    8.6/s Avg:   314 Min:     1 Max:  1634 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
+2025-11-11 23:04:00,203 INFO o.a.j.r.Summariser: summary =   2740 in 00:05:29 =    8.3/s Avg:   265 Min:     1 Max:  1790 Err:     0 (0.00%)
+2025-11-11 23:04:30,101 INFO o.a.j.r.Summariser: summary +    247 in 00:00:30 =    8.3/s Avg:   432 Min:     1 Max:  1941 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
+2025-11-11 23:04:30,106 INFO o.a.j.r.Summariser: summary =   2987 in 00:05:59 =    8.3/s Avg:   279 Min:     1 Max:  1941 Err:     0 (0.00%)
+2025-11-11 23:05:00,074 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:   768 Min:     1 Max:  2423 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
+2025-11-11 23:05:00,079 INFO o.a.j.r.Summariser: summary =   3236 in 00:06:29 =    8.3/s Avg:   316 Min:     1 Max:  2423 Err:     0 (0.00%)
+2025-11-11 23:05:30,126 INFO o.a.j.r.Summariser: summary +    258 in 00:00:30 =    8.6/s Avg:   357 Min:     1 Max:  1773 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
+2025-11-11 23:05:30,131 INFO o.a.j.r.Summariser: summary =   3494 in 00:06:59 =    8.3/s Avg:   319 Min:     1 Max:  2423 Err:     0 (0.00%)
+2025-11-11 23:06:00,166 INFO o.a.j.r.Summariser: summary +    241 in 00:00:30 =    8.0/s Avg:   227 Min:     1 Max:   974 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
+2025-11-11 23:06:00,172 INFO o.a.j.r.Summariser: summary =   3735 in 00:07:29 =    8.3/s Avg:   313 Min:     1 Max:  2423 Err:     0 (0.00%)
+2025-11-11 23:06:30,141 INFO o.a.j.r.Summariser: summary +    252 in 00:00:30 =    8.4/s Avg:   317 Min:     1 Max:  1168 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
+2025-11-11 23:06:30,146 INFO o.a.j.r.Summariser: summary =   3987 in 00:07:59 =    8.3/s Avg:   314 Min:     1 Max:  2423 Err:     0 (0.00%)
+2025-11-11 23:07:00,213 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.3/s Avg:   315 Min:     1 Max:  1118 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
+2025-11-11 23:07:00,218 INFO o.a.j.r.Summariser: summary =   4237 in 00:08:29 =    8.3/s Avg:   314 Min:     1 Max:  2423 Err:     0 (0.00%)
+2025-11-11 23:07:30,042 INFO o.a.j.r.Summariser: summary +    253 in 00:00:30 =    8.5/s Avg:   477 Min:     1 Max:  1520 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
+2025-11-11 23:07:30,048 INFO o.a.j.r.Summariser: summary =   4490 in 00:08:59 =    8.3/s Avg:   323 Min:     1 Max:  2423 Err:     0 (0.00%)
+2025-11-11 23:08:00,184 INFO o.a.j.r.Summariser: summary +    253 in 00:00:30 =    8.4/s Avg:   510 Min:     1 Max:  2118 Err:     0 (0.00%) Active: 15 Started: 30 Finished: 15
+2025-11-11 23:08:00,189 INFO o.a.j.r.Summariser: summary =   4743 in 00:09:29 =    8.3/s Avg:   333 Min:     1 Max:  2423 Err:     0 (0.00%)
+2025-11-11 23:08:29,636 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-3
+2025-11-11 23:08:30,264 INFO o.a.j.r.Summariser: summary +    245 in 00:00:30 =    8.1/s Avg:   314 Min:     1 Max:  1040 Err:     0 (0.00%) Active: 14 Started: 30 Finished: 16
+2025-11-11 23:08:30,269 INFO o.a.j.r.Summariser: summary =   4988 in 00:09:59 =    8.3/s Avg:   332 Min:     1 Max:  2423 Err:     0 (0.00%)
+2025-11-11 23:08:30,273 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-14
+2025-11-11 23:08:30,396 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-10
+2025-11-11 23:08:30,446 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-13
+2025-11-11 23:08:30,473 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-9
+2025-11-11 23:08:30,521 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-4
+2025-11-11 23:08:30,848 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-8
+2025-11-11 23:08:30,929 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-7
+2025-11-11 23:08:30,938 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-11
+2025-11-11 23:08:31,520 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2 2-2
+2025-11-11 23:08:31,520 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-2
+2025-11-11 23:08:31,911 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2 2-12
+2025-11-11 23:08:31,911 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-12
+2025-11-11 23:08:31,931 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2 2-5
+2025-11-11 23:08:31,932 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-5
+2025-11-11 23:08:31,958 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2 2-1
+2025-11-11 23:08:31,959 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-1
+2025-11-11 23:08:31,989 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2 2-15
+2025-11-11 23:08:31,990 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-15
+2025-11-11 23:08:32,006 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 2 2-6
+2025-11-11 23:08:32,006 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 2 2-6
+2025-11-11 23:08:32,007 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 3 : Thread Group 3
+2025-11-11 23:08:32,008 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group Thread Group 3.
+2025-11-11 23:08:32,008 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-11 23:08:32,008 INFO o.a.j.t.ThreadGroup: Starting thread group... number=3 threads=15 ramp-up=15 delayedStart=false
+2025-11-11 23:08:32,011 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-1
+2025-11-11 23:08:32,030 INFO o.a.j.t.ThreadGroup: Started thread group number 3
+2025-11-11 23:08:32,030 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: Thread Group 3 to finish before starting next group
+2025-11-11 23:08:33,010 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-2
+2025-11-11 23:08:34,010 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-3
+2025-11-11 23:08:35,010 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-4
+2025-11-11 23:08:36,011 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-5
+2025-11-11 23:08:37,012 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-6
+2025-11-11 23:08:38,020 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-7
+2025-11-11 23:08:39,014 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-8
+2025-11-11 23:08:40,018 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-9
+2025-11-11 23:08:41,014 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-10
+2025-11-11 23:08:42,011 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-11
+2025-11-11 23:08:43,020 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-12
+2025-11-11 23:08:44,017 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-13
+2025-11-11 23:08:45,015 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-14
+2025-11-11 23:08:46,015 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 3 3-15
+2025-11-11 23:09:00,051 INFO o.a.j.r.Summariser: summary +    231 in 00:00:30 =    7.8/s Avg:  1313 Min:     2 Max:  3037 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
+2025-11-11 23:09:00,057 INFO o.a.j.r.Summariser: summary =   5219 in 00:10:29 =    8.3/s Avg:   375 Min:     1 Max:  3037 Err:     0 (0.00%)
+2025-11-11 23:09:30,129 INFO o.a.j.r.Summariser: summary +    248 in 00:00:30 =    8.2/s Avg:  1829 Min:  1067 Max:  2895 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
+2025-11-11 23:09:30,134 INFO o.a.j.r.Summariser: summary =   5467 in 00:10:59 =    8.3/s Avg:   441 Min:     1 Max:  3037 Err:     0 (0.00%)
+2025-11-11 23:10:00,041 INFO o.a.j.r.Summariser: summary +    231 in 00:00:30 =    7.7/s Avg:  1950 Min:   884 Max:  3126 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
+2025-11-11 23:10:00,046 INFO o.a.j.r.Summariser: summary =   5698 in 00:11:29 =    8.3/s Avg:   502 Min:     1 Max:  3126 Err:     0 (0.00%)
+2025-11-11 23:10:30,138 INFO o.a.j.r.Summariser: summary +    241 in 00:00:30 =    8.0/s Avg:  1846 Min:  1059 Max:  2824 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
+2025-11-11 23:10:30,145 INFO o.a.j.r.Summariser: summary =   5939 in 00:11:59 =    8.3/s Avg:   557 Min:     1 Max:  3126 Err:     0 (0.00%)
+2025-11-11 23:11:00,043 INFO o.a.j.r.Summariser: summary +    238 in 00:00:30 =    8.0/s Avg:  1884 Min:   919 Max:  3194 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
+2025-11-11 23:11:00,048 INFO o.a.j.r.Summariser: summary =   6177 in 00:12:29 =    8.2/s Avg:   608 Min:     1 Max:  3194 Err:     0 (0.00%)
+2025-11-11 23:11:30,052 INFO o.a.j.r.Summariser: summary +    248 in 00:00:30 =    8.3/s Avg:  1824 Min:  1056 Max:  2786 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
+2025-11-11 23:11:30,057 INFO o.a.j.r.Summariser: summary =   6425 in 00:12:59 =    8.2/s Avg:   655 Min:     1 Max:  3194 Err:     0 (0.00%)
+2025-11-11 23:12:00,007 INFO o.a.j.r.Summariser: summary +    234 in 00:00:30 =    7.8/s Avg:  1914 Min:  1038 Max:  3307 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
+2025-11-11 23:12:00,014 INFO o.a.j.r.Summariser: summary =   6659 in 00:13:29 =    8.2/s Avg:   699 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:12:30,121 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:  1835 Min:   928 Max:  3250 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
+2025-11-11 23:12:30,124 INFO o.a.j.r.Summariser: summary =   6908 in 00:13:59 =    8.2/s Avg:   740 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:13:00,167 INFO o.a.j.r.Summariser: summary +    241 in 00:00:30 =    8.0/s Avg:  1859 Min:   968 Max:  3017 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
+2025-11-11 23:13:00,172 INFO o.a.j.r.Summariser: summary =   7149 in 00:14:29 =    8.2/s Avg:   778 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:13:30,026 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:  1811 Min:  1046 Max:  2711 Err:     0 (0.00%) Active: 15 Started: 45 Finished: 30
+2025-11-11 23:13:30,032 INFO o.a.j.r.Summariser: summary =   7398 in 00:14:59 =    8.2/s Avg:   813 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:13:32,176 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-14
+2025-11-11 23:13:32,176 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-14
+2025-11-11 23:13:32,260 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-2
+2025-11-11 23:13:32,260 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-2
+2025-11-11 23:13:32,293 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-1
+2025-11-11 23:13:32,293 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-1
+2025-11-11 23:13:32,341 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-13
+2025-11-11 23:13:32,342 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-13
+2025-11-11 23:13:32,504 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-3
+2025-11-11 23:13:32,504 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-3
+2025-11-11 23:13:32,696 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-15
+2025-11-11 23:13:32,696 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-15
+2025-11-11 23:13:32,704 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-6
+2025-11-11 23:13:32,704 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-6
+2025-11-11 23:13:32,771 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-11
+2025-11-11 23:13:32,772 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-11
+2025-11-11 23:13:32,849 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-5
+2025-11-11 23:13:32,849 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-5
+2025-11-11 23:13:32,892 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-4
+2025-11-11 23:13:32,892 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-4
+2025-11-11 23:13:32,994 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-8
+2025-11-11 23:13:32,994 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-8
+2025-11-11 23:13:33,039 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-10
+2025-11-11 23:13:33,039 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-10
+2025-11-11 23:13:33,055 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-7
+2025-11-11 23:13:33,055 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-7
+2025-11-11 23:13:33,064 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-12
+2025-11-11 23:13:33,065 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-12
+2025-11-11 23:13:33,082 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 3 3-9
+2025-11-11 23:13:33,082 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 3 3-9
+2025-11-11 23:13:33,083 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 4 : Thread Group 4
+2025-11-11 23:13:33,083 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group Thread Group 4.
+2025-11-11 23:13:33,083 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-11 23:13:33,084 INFO o.a.j.t.ThreadGroup: Starting thread group... number=4 threads=15 ramp-up=15 delayedStart=false
+2025-11-11 23:13:33,087 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-1
+2025-11-11 23:13:33,103 INFO o.a.j.t.ThreadGroup: Started thread group number 4
+2025-11-11 23:13:33,104 INFO o.a.j.e.StandardJMeterEngine: Waiting for thread group: Thread Group 4 to finish before starting next group
+2025-11-11 23:13:34,087 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-2
+2025-11-11 23:13:35,086 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-3
+2025-11-11 23:13:36,088 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-4
+2025-11-11 23:13:37,085 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-5
+2025-11-11 23:13:38,086 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-6
+2025-11-11 23:13:39,086 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-7
+2025-11-11 23:13:40,087 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-8
+2025-11-11 23:13:41,086 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-9
+2025-11-11 23:13:42,088 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-10
+2025-11-11 23:13:43,087 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-11
+2025-11-11 23:13:44,091 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-12
+2025-11-11 23:13:45,090 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-13
+2025-11-11 23:13:46,088 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-14
+2025-11-11 23:13:47,087 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 4 4-15
+2025-11-11 23:14:00,073 INFO o.a.j.r.Summariser: summary +    257 in 00:00:30 =    8.6/s Avg:   255 Min:     2 Max:  2684 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
+2025-11-11 23:14:00,079 INFO o.a.j.r.Summariser: summary =   7655 in 00:15:29 =    8.2/s Avg:   794 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:14:30,170 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.3/s Avg:    52 Min:     3 Max:   153 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
+2025-11-11 23:14:30,176 INFO o.a.j.r.Summariser: summary =   7905 in 00:15:59 =    8.2/s Avg:   771 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:15:00,073 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.4/s Avg:    54 Min:     3 Max:   189 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
+2025-11-11 23:15:00,077 INFO o.a.j.r.Summariser: summary =   8155 in 00:16:29 =    8.2/s Avg:   749 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:15:30,001 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:    57 Min:     3 Max:   162 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
+2025-11-11 23:15:30,006 INFO o.a.j.r.Summariser: summary =   8404 in 00:16:59 =    8.2/s Avg:   728 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:16:00,048 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:    54 Min:     3 Max:   161 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
+2025-11-11 23:16:00,053 INFO o.a.j.r.Summariser: summary =   8655 in 00:17:29 =    8.2/s Avg:   709 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:16:30,042 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.3/s Avg:    54 Min:     3 Max:   209 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
+2025-11-11 23:16:30,047 INFO o.a.j.r.Summariser: summary =   8905 in 00:17:59 =    8.3/s Avg:   690 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:17:00,070 INFO o.a.j.r.Summariser: summary +    249 in 00:00:30 =    8.3/s Avg:    56 Min:     3 Max:   176 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
+2025-11-11 23:17:00,079 INFO o.a.j.r.Summariser: summary =   9154 in 00:18:29 =    8.3/s Avg:   673 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:17:30,046 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.3/s Avg:    54 Min:     2 Max:   157 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
+2025-11-11 23:17:30,050 INFO o.a.j.r.Summariser: summary =   9404 in 00:18:59 =    8.3/s Avg:   656 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:18:00,077 INFO o.a.j.r.Summariser: summary +    251 in 00:00:30 =    8.4/s Avg:    51 Min:     3 Max:   180 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
+2025-11-11 23:18:00,082 INFO o.a.j.r.Summariser: summary =   9655 in 00:19:29 =    8.3/s Avg:   641 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:18:30,003 INFO o.a.j.r.Summariser: summary +    250 in 00:00:30 =    8.4/s Avg:    58 Min:     3 Max:   187 Err:     0 (0.00%) Active: 15 Started: 60 Finished: 45
+2025-11-11 23:18:30,006 INFO o.a.j.r.Summariser: summary =   9905 in 00:19:59 =    8.3/s Avg:   626 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:18:31,480 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-14
+2025-11-11 23:18:31,543 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-11
+2025-11-11 23:18:31,735 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-3
+2025-11-11 23:18:31,782 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-9
+2025-11-11 23:18:31,966 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-13
+2025-11-11 23:18:32,010 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-2
+2025-11-11 23:18:32,109 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-6
+2025-11-11 23:18:32,136 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-12
+2025-11-11 23:18:32,472 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-10
+2025-11-11 23:18:32,515 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-7
+2025-11-11 23:18:32,699 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-4
+2025-11-11 23:18:32,782 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-5
+2025-11-11 23:18:32,901 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-15
+2025-11-11 23:18:33,104 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 4 4-8
+2025-11-11 23:18:33,104 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-8
+2025-11-11 23:18:33,132 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 4 4-1
+2025-11-11 23:18:33,133 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 4 4-1
+2025-11-11 23:18:33,133 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 5 : Thread Group 5
+2025-11-11 23:18:33,133 INFO o.a.j.e.StandardJMeterEngine: Starting 15 threads for group Thread Group 5.
+2025-11-11 23:18:33,134 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2025-11-11 23:18:33,134 INFO o.a.j.t.ThreadGroup: Starting thread group... number=5 threads=15 ramp-up=15 delayedStart=false
+2025-11-11 23:18:33,137 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-1
+2025-11-11 23:18:33,147 INFO o.a.j.t.ThreadGroup: Started thread group number 5
+2025-11-11 23:18:33,148 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2025-11-11 23:18:34,136 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-2
+2025-11-11 23:18:35,136 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-3
+2025-11-11 23:18:36,136 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-4
+2025-11-11 23:18:37,136 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-5
+2025-11-11 23:18:38,136 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-6
+2025-11-11 23:18:39,136 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-7
+2025-11-11 23:18:40,145 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-8
+2025-11-11 23:18:41,135 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-9
+2025-11-11 23:18:42,137 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-10
+2025-11-11 23:18:43,144 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-11
+2025-11-11 23:18:44,136 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-12
+2025-11-11 23:18:45,142 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-13
+2025-11-11 23:18:46,135 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-14
+2025-11-11 23:18:47,136 INFO o.a.j.t.JMeterThread: Thread started: Thread Group 5 5-15
+2025-11-11 23:19:00,161 INFO o.a.j.r.Summariser: summary +    175 in 00:00:30 =    5.8/s Avg:  1609 Min:     3 Max:  3185 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
+2025-11-11 23:19:00,166 INFO o.a.j.r.Summariser: summary =  10080 in 00:20:29 =    8.2/s Avg:   643 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:19:30,146 INFO o.a.j.r.Summariser: summary +    174 in 00:00:30 =    5.8/s Avg:  2578 Min:  2099 Max:  3174 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
+2025-11-11 23:19:30,151 INFO o.a.j.r.Summariser: summary =  10254 in 00:20:59 =    8.1/s Avg:   676 Min:     1 Max:  3307 Err:     0 (0.00%)
+2025-11-11 23:20:00,323 INFO o.a.j.r.Summariser: summary +    173 in 00:00:30 =    5.7/s Avg:  2617 Min:  2122 Max:  3390 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
+2025-11-11 23:20:00,328 INFO o.a.j.r.Summariser: summary =  10427 in 00:21:29 =    8.1/s Avg:   708 Min:     1 Max:  3390 Err:     0 (0.00%)
+2025-11-11 23:20:30,120 INFO o.a.j.r.Summariser: summary +    176 in 00:00:30 =    5.9/s Avg:  2530 Min:  2103 Max:  3563 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
+2025-11-11 23:20:30,125 INFO o.a.j.r.Summariser: summary =  10603 in 00:21:59 =    8.0/s Avg:   738 Min:     1 Max:  3563 Err:     0 (0.00%)
+2025-11-11 23:21:00,751 INFO o.a.j.r.Summariser: summary +    171 in 00:00:31 =    5.6/s Avg:  2676 Min:  2106 Max:  3414 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
+2025-11-11 23:21:00,756 INFO o.a.j.r.Summariser: summary =  10774 in 00:22:30 =    8.0/s Avg:   769 Min:     1 Max:  3563 Err:     0 (0.00%)
+2025-11-11 23:21:30,072 INFO o.a.j.r.Summariser: summary +    176 in 00:00:29 =    6.0/s Avg:  2543 Min:  2109 Max:  3124 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
+2025-11-11 23:21:30,078 INFO o.a.j.r.Summariser: summary =  10950 in 00:22:59 =    7.9/s Avg:   798 Min:     1 Max:  3563 Err:     0 (0.00%)
+2025-11-11 23:22:00,033 INFO o.a.j.r.Summariser: summary +    173 in 00:00:30 =    5.8/s Avg:  2573 Min:  2075 Max:  3312 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
+2025-11-11 23:22:00,039 INFO o.a.j.r.Summariser: summary =  11123 in 00:23:29 =    7.9/s Avg:   825 Min:     1 Max:  3563 Err:     0 (0.00%)
+2025-11-11 23:22:30,135 INFO o.a.j.r.Summariser: summary +    179 in 00:00:30 =    5.9/s Avg:  2538 Min:  2118 Max:  3740 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
+2025-11-11 23:22:30,140 INFO o.a.j.r.Summariser: summary =  11302 in 00:23:59 =    7.9/s Avg:   852 Min:     1 Max:  3740 Err:     0 (0.00%)
+2025-11-11 23:23:00,043 INFO o.a.j.r.Summariser: summary +    171 in 00:00:30 =    5.7/s Avg:  2591 Min:  2127 Max:  3178 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
+2025-11-11 23:23:00,048 INFO o.a.j.r.Summariser: summary =  11473 in 00:24:29 =    7.8/s Avg:   878 Min:     1 Max:  3740 Err:     0 (0.00%)
+2025-11-11 23:23:30,468 INFO o.a.j.r.Summariser: summary +    179 in 00:00:30 =    5.9/s Avg:  2554 Min:  2121 Max:  3072 Err:     0 (0.00%) Active: 15 Started: 75 Finished: 60
+2025-11-11 23:23:30,473 INFO o.a.j.r.Summariser: summary =  11652 in 00:25:00 =    7.8/s Avg:   904 Min:     1 Max:  3740 Err:     0 (0.00%)
+2025-11-11 23:23:33,465 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-4
+2025-11-11 23:23:33,466 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-4
+2025-11-11 23:23:33,721 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-8
+2025-11-11 23:23:33,721 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-8
+2025-11-11 23:23:33,820 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-2
+2025-11-11 23:23:33,820 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-2
+2025-11-11 23:23:33,842 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-13
+2025-11-11 23:23:33,842 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-13
+2025-11-11 23:23:33,897 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-1
+2025-11-11 23:23:33,897 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-1
+2025-11-11 23:23:34,312 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-10
+2025-11-11 23:23:34,312 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-10
+2025-11-11 23:23:34,315 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-14
+2025-11-11 23:23:34,315 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-14
+2025-11-11 23:23:34,340 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-6
+2025-11-11 23:23:34,340 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-6
+2025-11-11 23:23:34,432 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-11
+2025-11-11 23:23:34,433 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-11
+2025-11-11 23:23:34,458 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-5
+2025-11-11 23:23:34,458 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-5
+2025-11-11 23:23:34,479 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-9
+2025-11-11 23:23:34,480 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-9
+2025-11-11 23:23:34,486 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-7
+2025-11-11 23:23:34,487 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-7
+2025-11-11 23:23:34,496 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-3
+2025-11-11 23:23:34,496 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-3
+2025-11-11 23:23:34,577 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-15
+2025-11-11 23:23:34,578 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-15
+2025-11-11 23:23:34,581 INFO o.a.j.t.JMeterThread: Stopping because end time detected by thread: Thread Group 5 5-12
+2025-11-11 23:23:34,581 INFO o.a.j.t.JMeterThread: Thread finished: Thread Group 5 5-12
+2025-11-11 23:23:34,582 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2025-11-11 23:23:34,584 INFO o.a.j.r.Summariser: summary +     32 in 00:00:04 =    7.8/s Avg:  2436 Min:  1685 Max:  2963 Err:     0 (0.00%) Active: 0 Started: 75 Finished: 75
+2025-11-11 23:23:34,588 INFO o.a.j.r.Summariser: summary =  11684 in 00:25:04 =    7.8/s Avg:   908 Min:     1 Max:  3740 Err:     0 (0.00%)
