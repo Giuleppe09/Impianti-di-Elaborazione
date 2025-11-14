@@ -4,7 +4,7 @@ import re
 from typing import Dict, Any
 
 # --- 1. Lettura dei dati (Adattato a WorkloadCharacterization...) ---
-file_csv = 'HL7_PCA5_Cluster15.xlsx'
+file_csv = 'HL1_PCA5_Cluster17.xlsx'
 
 try:
     df = pd.read_excel(file_csv)
@@ -70,7 +70,7 @@ else:
 
 # --- 4. Calcolo della Devianza post-PCA su tutte le componenti ---
 print("\n" + "="*70)
-print("ANALISI PCA (basata sui punteggi importati)")
+print("ANALISI PCA")
 print("="*70)
 
 pca_data_full = df[pca_columns].values
@@ -82,7 +82,7 @@ print(f"Devianza Totale (DEV_TOT):     {DEV_TOT:>12.2f}")
 print(f"Devianza dopo PCA (DEV_PCA):   {DEV_PCA:>12.2f} ({DEV_PCA_per:.2%})")
 print(f"Devianza persa nella PCA:      {(1 - DEV_PCA_per):.2%}")
 print("\nNota: La 'Devianza dopo PCA' è la % di varianza spiegata dai")
-print(f"{len(pca_columns)} componenti. Questo valore ora dovrebbe corrispondere a JMP.")
+print(f"{len(pca_columns)} componenti.")
 
 
 # --- 5. Funzione per calcolare le devianze per clustering (OTTIMIZZATA) ---
@@ -168,8 +168,6 @@ try:
     if len(valid_indices) < 2:
         print(f"Avviso: Colonna '{cluster_col_name}' ha meno di 2 punti validi (cluster > 0). Saltata.")
         exit()
-        
-    print(f"Trovati {len(valid_indices)} campioni validi (cluster > 0) su {len(cluster_data_clean_np)} totali.")
     
     # Filtra i dati PCA e i dati cluster
     pca_data_valid = pca_data_full[valid_indices, :]
@@ -200,11 +198,9 @@ try:
 
     # Stampa risultati riepilogativi
     print(f"\n{'='*70}")
-    print(f"RIEPILOGO CONFIGURAZIONE: {cluster_col_name}")
+    print(f"RIEPILOGO")
     print(f"{'='*70}")
-    print(f"PCA: {n_pca_usati} componenti | Cluster: {n_cluster_trovati} (Etichette Valide)")
-    print(f"Verifica (W+B)/DEV_PCA_valid: {risultato['verifica']:.6f} (deve essere ~1.0)")
-    print("-" * 70)
+    print(f"PCA: {n_pca_usati} componenti | Cluster: {n_cluster_trovati}")
     print(f"Devianza Intra-cluster Totale (**W**):   {risultato['W']:>12.2f}")
     print(f"Devianza Inter-cluster Totale (**B**):   {risultato['B']:>12.2f}")
     print("-" * 70)
@@ -238,8 +234,3 @@ if risultati:
     df_risultati = pd.DataFrame(risultati)
     output_file = 'risultati_devianze_workload_HL.xlsx'
     df_risultati.to_excel(output_file, index=False)
-    print(f"\n{'='*70}")
-    print(f"Risultati salvati in: {output_file}")
-    print(f"{'='*70}")
-else:
-    print("\nNessun risultato da salvare.")
