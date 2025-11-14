@@ -5,7 +5,7 @@ import os
 
 # 1. Rileva automaticamente il file caricato
 # (Aggiornato al nome del file che hai effettivamente caricato)
-file_input = "LLSint_PCA5_Cluster19.xlsx" 
+file_input = "LLReal_PCA7_Cluster14.xlsx" 
 
 # 2. Crea un nome di output dinamico
 try:
@@ -15,7 +15,7 @@ except:
 
 # === MODIFICA QUI ===
 # Cambiato il nome del file di output in .xlsx
-file_output = f"{file_base_name}_PCA_Cluster_Subset.xlsx"
+file_output = f"{file_base_name}_Subset.xlsx"
 
 # --- Esecuzione ---
 
