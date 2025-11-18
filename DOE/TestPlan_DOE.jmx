@@ -6,6 +6,7 @@
       <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables">
         <collectionProp name="Arguments.arguments"/>
       </elementProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
     </TestPlan>
     <hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group Low Intensity">
@@ -34,7 +35,6 @@
           </ConfigTestElement>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 1 Low 3">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/low_3.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -47,7 +47,6 @@
           </HTTPSamplerProxy>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 2 Mid_Low 1">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/mid_low_1.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -60,7 +59,6 @@
           </HTTPSamplerProxy>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 3 Mid_High 5">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/mid_high_5.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -73,7 +71,6 @@
           </HTTPSamplerProxy>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 4 High 1">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/high_1.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -96,43 +93,6 @@
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <url>true</url>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename">C:\Users\ladyc\Desktop\Test1000.csv</stringProp>
-        </ResultCollector>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group Mid Intensity">
         <intProp name="ThreadGroup.num_threads">15</intProp>
@@ -160,7 +120,6 @@
           </ConfigTestElement>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 1 Low 3">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/low_3.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -173,7 +132,6 @@
           </HTTPSamplerProxy>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 2 Mid_Low 1">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/mid_low_1.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -186,7 +144,6 @@
           </HTTPSamplerProxy>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 3 Mid_High 5">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/mid_high_5.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -199,7 +156,6 @@
           </HTTPSamplerProxy>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 4 High 1">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/high_1.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -211,7 +167,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree/>
-          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
             <intProp name="calcMode">4</intProp>
             <doubleProp>
               <name>throughput</name>
@@ -222,43 +178,6 @@
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <url>true</url>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename">C:\Users\ladyc\Desktop\Test1000.csv</stringProp>
-        </ResultCollector>
-        <hashTree/>
       </hashTree>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group High Intensity">
         <intProp name="ThreadGroup.num_threads">15</intProp>
@@ -286,7 +205,6 @@
           </ConfigTestElement>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 1 Low 3">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/low_3.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -299,7 +217,6 @@
           </HTTPSamplerProxy>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 2 Mid_Low 1">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/mid_low_1.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -312,7 +229,6 @@
           </HTTPSamplerProxy>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 3 Mid_High 5">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/mid_high_5.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -325,7 +241,6 @@
           </HTTPSamplerProxy>
           <hashTree/>
           <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="Request 4 High 1">
-            <stringProp name="HTTPSampler.domain">192.168.48.128</stringProp>
             <stringProp name="HTTPSampler.port">80</stringProp>
             <stringProp name="HTTPSampler.path">/high_1.txt</stringProp>
             <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
@@ -337,7 +252,7 @@
             </elementProp>
           </HTTPSamplerProxy>
           <hashTree/>
-          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer">
+          <ConstantThroughputTimer guiclass="TestBeanGUI" testclass="ConstantThroughputTimer" testname="Constant Throughput Timer" enabled="true">
             <intProp name="calcMode">4</intProp>
             <doubleProp>
               <name>throughput</name>
@@ -348,43 +263,6 @@
           </ConstantThroughputTimer>
           <hashTree/>
         </hashTree>
-        <ResultCollector guiclass="SimpleDataWriter" testclass="ResultCollector" testname="Simple Data Writer" enabled="true">
-          <boolProp name="ResultCollector.error_logging">false</boolProp>
-          <objProp>
-            <name>saveConfig</name>
-            <value class="SampleSaveConfiguration">
-              <time>true</time>
-              <latency>true</latency>
-              <timestamp>true</timestamp>
-              <success>true</success>
-              <label>true</label>
-              <code>true</code>
-              <message>true</message>
-              <threadName>true</threadName>
-              <dataType>true</dataType>
-              <encoding>false</encoding>
-              <assertions>true</assertions>
-              <subresults>true</subresults>
-              <responseData>false</responseData>
-              <samplerData>false</samplerData>
-              <xml>false</xml>
-              <fieldNames>true</fieldNames>
-              <responseHeaders>false</responseHeaders>
-              <requestHeaders>false</requestHeaders>
-              <responseDataOnError>false</responseDataOnError>
-              <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
-              <assertionsResultsToSave>0</assertionsResultsToSave>
-              <bytes>true</bytes>
-              <sentBytes>true</sentBytes>
-              <url>true</url>
-              <threadCounts>true</threadCounts>
-              <idleTime>true</idleTime>
-              <connectTime>true</connectTime>
-            </value>
-          </objProp>
-          <stringProp name="filename">C:\Users\ladyc\Desktop\Test1000.csv</stringProp>
-        </ResultCollector>
-        <hashTree/>
       </hashTree>
     </hashTree>
   </hashTree>
