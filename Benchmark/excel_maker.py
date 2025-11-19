@@ -250,10 +250,10 @@ def main():
     print("ANALISI RISULTATI BENCHMARK NBODY")
     print("="*60 + "\n")
     
-    # Configurazione - MODIFICA QUESTI PATH
+
     benchmarks = {
-        'Suso': 'Suso_Results',      # Directory risultati Suso
-        'Crist': 'Crist_Results',    # Directory risultati Crist
+        'Giuseppe': 'Suso_Results',      # Directory risultati Suso
+        'Cristina': 'Crist_Results',    # Directory risultati Crist
     }
     
     # Carica tutti i benchmark
